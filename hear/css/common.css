@@ -222,9 +222,12 @@ img {
     font-size: 12px;
     line-height: 38px;
     margin-bottom: 30px;
-	background: #e6e6e6;
+	background: #ffffff;
     text-decoration: none;
     color: #2d2d2d;
+}
+.btn:hover {
+	background: #f5f9fa;
 }
 
 .intro {
@@ -296,12 +299,27 @@ img {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.section-1 {
+	background-image: url(../images/bg-1.jpg);
+}
+.section-2 {
+	background-image: url(../images/bg-2.jpg);
+}
+.section-3 {
+	background-image: url(../images/bg-3.jpg);
+}
+.section-4 {
+	background-image: url(../images/bg-4.jpg);
+}
+.section-5 {
+	background-image: url(../images/bg-5.jpg);
+}
 
 .footer-wrapper {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	border-top: 1px solid #eeeeee;
+/*	border-top: 1px solid #eeeeee;*/
 }
 #footer {
 	padding: 20px 0;
@@ -310,13 +328,15 @@ img {
 	font-size: 12px;
 	line-height: 24px;
 	overflow: auto;
-	color: #666;
+/*	color: #666;*/
+	color: #fff;
 	text-align: center;
 }
 #footer p {
 	margin: 0;
 }
 #footer a {
-	color: #666666;
+/*	color: #666666;*/
+	color: #fff;
 	text-decoration: none;
 }
