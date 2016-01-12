@@ -289,3 +289,34 @@ img {
 .icon-iphone {
 	background-position: 0 -550px;
 }
+
+
+.section {
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.footer-wrapper {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	border-top: 1px solid #eeeeee;
+}
+#footer {
+	padding: 20px 0;
+	width: 1000px;
+	margin: 0 auto;
+	font-size: 12px;
+	line-height: 24px;
+	overflow: auto;
+	color: #666;
+	text-align: center;
+}
+#footer p {
+	margin: 0;
+}
+#footer a {
+	color: #666666;
+	text-decoration: none;
+}
