@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>waterfall-horizontal demo</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/waterfall.css">
+</head>
+<body>
+<div id="wrapper">
+<div id="container"></div>
+</div>
+<script type="text/x-handlebars-template" id="waterfall-horizontal-tpl">
+{{#items}}
+    <div class="item" style="position: absolute; heigth: 236px;background-image: url({{src}})"></div>
+{{/items}}
+</script>
+<script src="./js/libs/jquery/jquery.js"></script>
+<script src="./js/libs/handlebars/handlebars.js"></script>
+<script src="./js/waterfall-horizontal.js"></script>
+<script>
+$('#container').waterfallHorizontal({
+    itemCls: 'item',
+	rowHeight: 236,  
+	gutterWidth: 14,
+	gutterHeight: 14,
+    path: function(page) {
+        return './data/data.json?page=' + page;
+    }
+});
+</script>
+</body>
+</html>

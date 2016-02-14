@@ -1,0 +1,43 @@
+a:link, a:visited {
+    color: #333;
+}
+a:hover {
+    color: #c30;
+}
+
+#wrapper {
+	width: 1000px;
+	margin: 50px auto;
+	position: relative;
+}
+
+@media screen and (min-width: 1300px) {
+	#wrapper {width: 1250px;}
+} 
+@media screen and (min-width: 1550px) {
+	#wrapper {width: 1500px}
+}
+
+/*
+ * waterfall
+ */
+.item {
+    position: absolute;
+    z-index: 1;
+	background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #fff;
+    background-size: cover;
+    box-shadow: 0 1px 3px rgba(34, 25, 25, .4);
+    -moz-box-shadow: 0 1px 3px rgba(34, 25, 25, .4);
+    -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, .4);
+    filter: progid:DXImageTransform.Microsoft.Shadow(color = #adacac, direction = 135, strength = 2);
+}
+
+.item:hover {
+	cursor: pointer;
+    box-shadow: 0 1px 5px rgba(34, 25, 25, .8);
+    -moz-box-shadow: 0 1px 5px rgba(34, 25, 25, .8);
+    -webkit-box-shadow: 0 1px 5px rgba(34, 25, 25, .8);
+    filter: progid:DXImageTransform.Microsoft.Shadow(color = #979797, direction = 135, strength = 3);
+}
