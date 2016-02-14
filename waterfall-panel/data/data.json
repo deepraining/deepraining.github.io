@@ -1,0 +1,95 @@
+{
+    "total": 20, 
+    "items": [
+        {
+            "src": "./images/sample5-1.jpg", 
+            "width": 800, 
+            "height": 600
+        }, 
+        {
+            "src": "./images/sample5-2.jpg", 
+            "width": 426, 
+            "height": 600
+        }, 
+        {
+            "src": "./images/sample5-3.jpg", 
+            "width": 426, 
+            "height": 600
+        }, 
+        {
+            "src": "./images/sample5-4.jpg", 
+            "width": 426, 
+            "height": 600
+        }, 
+        {
+            "src": "./images/sample5-5.jpg", 
+            "width": 426, 
+            "height": 600
+        }, 
+        {
+            "src": "./images/sample5-6.jpg", 
+            "width": 780, 
+            "height": 554
+        }, 
+        {
+            "src": "./images/sample5-7.jpg", 
+            "width": 780, 
+            "height": 554
+        }, 
+        {
+            "src": "./images/sample5-8.jpg", 
+            "width": 904, 
+            "height": 600
+        }, 
+        {
+            "src": "./images/sample5-9.jpg", 
+            "width": 780, 
+            "height": 554
+        }, 
+        {
+            "src": "./images/sample5-10.jpg", 
+            "width": 426, 
+            "height": 600
+        }, 
+        {
+            "src": "./images/sample5-11.jpg", 
+            "width": 426, 
+            "height": 600
+        }, 
+        {
+            "src": "./images/sample5-12.jpg", 
+            "width": 708, 
+            "height": 600
+        }, 
+        {
+            "src": "./images/sample5-13.jpg", 
+            "width": 800, 
+            "height": 600
+        }, 
+        {
+            "src": "./images/sample5-14.jpg", 
+            "width": 1024, 
+            "height": 559
+        }, 
+        {
+            "src": "./images/sample5-15.jpg", 
+            "width": 907, 
+            "height": 600
+        }, 
+        {
+            "src": "./images/sample5-16.jpg", 
+            "width": 800, 
+            "height": 600
+        }, 
+        {
+            "src": "./images/sample5-17.jpg", 
+            "width": 1200, 
+            "height": 659
+        }, 
+        {
+            "src": "./images/sample5-18.jpg", 
+            "width": 580, 
+            "height": 580
+        }
+    ]
+}
