@@ -85,11 +85,6 @@
             "src": "./images/sample5-17.jpg", 
             "width": 1200, 
             "height": 659
-        }, 
-        {
-            "src": "./images/sample5-18.jpg", 
-            "width": 580, 
-            "height": 580
         }
     ]
 }
