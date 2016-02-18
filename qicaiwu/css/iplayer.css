@@ -1,0 +1,632 @@
+/* icon-iplayer, default 20x20 */
+.icon-iplayer {
+    text-indent: 100%;
+    display: inline-block;
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle !important;
+    background: url(../image/icon-iplayer.png) no-repeat;
+}
+.icon-iplayer-play {
+    width: 30px;
+    height: 30px;
+    background-position: 0 0;
+}
+.icon-iplayer-play:hover {
+    background-position: -30px 0;
+}
+.icon-iplayer-pause {
+    width: 30px;
+    height: 30px;
+    background-position: -60px 0;
+}
+.icon-iplayer-pause:hover {
+    background-position: -90px 0;
+}
+.icon-iplayer-like {
+    background-position: 0 -30px;
+}
+.icon-iplayer-like:hover {
+    background-position: -20px -30px;
+}
+.icon-iplayer-like.active {
+    background-position: -40px -30px;
+}
+.icon-iplayer-share {
+    background-position: -60px -30px;
+}
+.icon-iplayer-share:hover {
+    background-position: -80px -30px;
+}
+.icon-iplayer-share.active {
+    background-position: -100px -30px;
+}
+.icon-iplayer-add-to {
+    background-position: -120px -30px;
+}
+.icon-iplayer-add-to:hover {
+    background-position: -140px -30px;
+}
+.icon-iplayer-show-list {
+    background-position: 0px -50px;
+}
+.icon-iplayer-show-list:hover {
+    background-position: -20px -50px;
+}
+.icon-iplayer-show-list.active {
+    background-position: 0px -70px;
+}
+.icon-iplayer-mode-order {
+    background-position: -40px -50px;
+}
+.icon-iplayer-mode-order:hover {
+    background-position: -60px -50px;
+}
+.icon-iplayer-mode-random {
+    background-position: -80px -50px;
+}
+.icon-iplayer-mode-random:hover {
+    background-position: -100px -50px;
+}
+.icon-iplayer-fullscreen {
+    background-position: -120px -50px;
+}
+.icon-iplayer-fullscreen:hover {
+    background-position: -140px -50px;
+}
+.icon-iplayer-exit-fullscreen {
+    background-position: -160px -50px;
+}
+.icon-iplayer-exit-fullscreen:hover {
+    background-position: -180px -50px;
+}
+.icon-iplayer-prev-large {
+    width: 100px;
+    height: 100px;
+    background-position: 0 -200px;
+}
+/*.icon-iplayer-prev-large:hover {
+    width: 100px;
+    height: 100px;
+    background-position: -100px -200px;
+}*/
+.icon-iplayer-next-large {
+    width: 100px;
+    height: 100px;
+    background-position: 0 -300px;
+}
+/*.icon-iplayer-next-large:hover {
+    width: 100px;
+    height: 100px;
+    background-position: -100px -300px;
+}*/
+.icon-iplayer-prev-medium {
+    width: 40px;
+    height: 40px;
+    background-position: 0 -150px;
+}
+.icon-iplayer-prev-medium:hover {
+    width: 40px;
+    height: 40px;
+    background-position: -40px -150px;
+}
+.icon-iplayer-next-medium {
+    width: 40px;
+    height: 40px;
+    background-position: -80px -150px;
+}
+.icon-iplayer-next-medium:hover {
+    width: 40px;
+    height: 40px;
+    background-position: -120px -150px;
+}
+.icon-iplayer-dot {
+    width: 8px;
+    height: 8px;
+    background-position: 0 -90px;
+}
+.icon-iplayer-dot-large {
+    width: 14px;
+    height: 14px;
+    background-position: -10px -90px;
+}
+.icon-iplayer-display-transitions {
+    background-position: -20px -70px;
+}
+.icon-iplayer-display-transitions:hover {
+    background-position: -40px -70px;
+}
+.icon-iplayer-display-transitions.active {
+    background-position: -60px -70px;
+}
+.icon-iplayer-display-transitions.disabled {
+    background-position: -40px -70px;
+}
+
+
+
+
+
+
+
+
+
+#iplayer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*min-width: 800px;
+    min-height: 450px;*/
+    z-index: 10000;
+    background: #fff;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+#iplayer a, #iplayer a:hover {
+	text-decoration: none
+}
+
+.hide-cursor {
+    cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAATSURBVHjaYvj//z8DAAAA//8DAAj8Av7TpXVhAAAAAElFTkSuQmCC) 25 25, no-drop
+}
+#iplayer-handle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+#iplayer-click-section {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+#iplayer .iplayer-close-btn {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    cursor: pointer;
+    color: #FF5F83;
+    height: 130px;
+    width: 100px;
+}
+#iplayer .iplayer-close-btn:hover {
+    opacity: 1;
+}
+#iplayer .iplayer-close-btn span {
+    font-size: 100px;
+    line-height: 130px;
+    width: 100px;
+}
+
+#iplayer .iplayer-prev-btn, #iplayer .iplayer-next-btn {
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    margin-top: -50px;
+
+}
+#iplayer .iplayer-prev-btn:hover, #iplayer .iplayer-next-btn:hover {
+    opacity: 1;
+}
+#iplayer .iplayer-prev-btn {
+    left: 20px;
+}
+#iplayer .iplayer-next-btn {
+    right: 20px;
+}
+#iplayer-loading {
+    position: absolute;
+    bottom: 130px;
+    right: 40px;
+}
+
+#iplayer-bottom {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 50px;
+    background: #333333;
+    background: black;
+    background: rgba(0,0,0,0.5);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,0.5)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.5)));
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
+}
+
+#iplayer-bottom-wrap {
+    height: 100%;
+    position: relative;
+    padding-left: 80px;
+    padding-right: 370px
+}
+
+.iplayer-controls {
+    width: 80px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.iplayer-controls .iplayer-play-btn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 30px
+}
+
+
+.iplayer-info {
+    overflow: hidden;
+    top: 15px;
+    height: 20px;
+    margin-left: 20px;
+    position: relative;
+    user-select: text;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    -ms-user-select: text
+}
+
+.iplayer-info .iplayer-image {
+    float: left;
+    margin-left: 20px;
+    height: 20px;
+    line-height: 20px;
+    color: #fff
+}
+
+.iplayer-info .iplayer-image .iplayer-image-info {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 100px;
+    font-size: 14px
+}
+.iplayer-info .iplayer-image-info a {
+    padding: 0 10px;
+    color: #fff;
+}
+.iplayer-info .iplayer-image-info a:link,.iplayer-info .iplayer-image-info a:visited {
+    color: #fff;
+    text-decoration: none
+}
+
+.iplayer-info .iplayer-image-info a:hover,.iplayer-image .iplayer-image-info a:active {
+    text-decoration: underline
+}
+
+.iplayer-info .iplayer-image-controls {
+    float: right;
+    margin-right: 20px;
+    width: 20px;
+    height: 20px
+}
+/*
+#js-iplayer-image-add-to {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    cursor: pointer
+}
+
+#js-iplayer-image-like {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    cursor: pointer
+}
+*/
+.iplayer-info .iplayer-length {
+    float: left;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+}
+.iplayer-info .iplayer-length span {
+    padding: 0 10px;
+}
+
+.iplayer-progress {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 0;
+    height: 6px;
+}
+
+.iplayer-progress .iplayer-progress-inner {
+    position: absolute;
+    top: 2px;
+    width: 100%;
+    height: 2px;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAASSURBVBhXY/j//78xCEMZ/40Bd5oMwTgDaikAAAAASUVORK5CYII=") repeat 0 50%
+}
+
+
+.iplayer-progress .iplayer-progress-playing {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    background: #01a0d8;
+}
+
+
+.iplayer-progress .iplayer-progress-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer
+}
+.iplayer-progress:hover .iplayer-progress-inner, 
+.iplayer-progress:hover .iplayer-progress-playing, 
+.iplayer-progress:hover .iplayer-progress-panel {
+    height: 6px;
+}
+.iplayer-progress:hover .iplayer-progress-inner, 
+.iplayer-progress:hover .iplayer-progress-panel {
+    top: 0px;
+}
+.iplayer-progress .iplayer-dot {
+    position: absolute;
+    display: none;
+    top: -4px;
+    cursor: pointer;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    margin-left: -4px
+}
+.iplayer-progress:hover .iplayer-dot {
+    display: block;
+}
+
+
+.iplayer-rate {
+    width: 140px;
+    height: 100%;
+    position: absolute;
+    right: 210px;
+    top: 0
+}
+
+#iplayer-rate-info {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    width: 140px;
+    height: 20px
+}
+/*#iplayer-rate-info .iplayer-min-rate, #iplayer-rate-info .iplayer-max-rate {
+    position: absolute;
+    line-height: 18px;
+    color: #FFF;
+    width: 30px;
+    opacity: 0.8;
+    text-align: center;
+}
+#iplayer-rate-info .iplayer-min-rate {
+    left: 0px;
+}
+#iplayer-rate-info .iplayer-max-rate {
+    right: 0px;
+}*/
+#iplayer-rate-value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    line-height: 20px;
+    width: 20px;
+    text-align: center;
+}
+#iplayer-rate-value span {
+    color: #fff;
+}
+.iplayer-rate .iplayer-rate-wrap {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 20px
+}
+
+.iplayer-rate .iplayer-rate-wrap .iplayer-rate-panel {
+    position: absolute;
+    left: 40px;
+    top: 0;
+    right: 0;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAASSURBVBhXY/j//78xCEMZ/40Bd5oMwTgDaikAAAAASUVORK5CYII=") repeat-x 0 50%;
+    height: 100%
+}
+
+.iplayer-rate .iplayer-rate-wrap .iplayer-rate-image {
+    -webkit-transition-property: width;
+    -moz-transition-property: width;
+    -o-transition-property: width;
+    -ms-transition-property: width;
+    transition-property: width;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    -ms-transition-duration: .3s;
+    transition-duration: .3s;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAPSURBVBhXY/gPBVDG//8Aj4IP8dFqTzkAAAAASUVORK5CYII=") repeat-x 0 50%;
+    height: 100%
+}
+
+.iplayer-rate .iplayer-rate-wrap .iplayer-rate-dot {
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    position: absolute;
+    display: none;
+    top: 6px;
+    margin-left: -2px;
+}
+.iplayer-rate-wrap:hover .iplayer-rate-dot {
+    display: block;
+}
+.iplayer-rate .iplayer-rate-wrap .iplayer-rate-control {
+    height: 100%;
+    position: absolute;
+    left: 40px;
+    top: 0;
+    right: 0;
+    cursor: pointer
+}
+
+
+.iplayer-actions {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    height: 20px;
+    width: 160px;
+}
+.iplayer-actions .iplayer-fullscreen, 
+.iplayer-actions .iplayer-show-list, 
+/*.iplayer-actions .iplayer-play-mode, */
+.iplayer-actions .iplayer-display-transitions,
+.iplayer-actions .iplayer-share-code {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.iplayer-actions .iplayer-fullscreen {
+    right: 0;
+}
+.iplayer-actions .iplayer-show-list {
+    right: 40px;
+}
+/*.iplayer-actions .iplayer-play-mode {
+    right: 80px
+}*/
+.iplayer-actions .iplayer-display-transitions {
+    right: 80px
+}
+.iplayer-actions .iplayer-share-code {
+    right: 120px;
+}
+
+
+
+
+
+#iplayer-list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+    height: 50px;
+    background: rgba(33,33,33,.2);
+}
+#iplayer-list .iplayer-list-prev-btn, #iplayer-list .iplayer-list-next-btn {
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    cursor: pointer;
+}
+#iplayer-list .iplayer-list-prev-btn {
+    left: 5px;
+}
+#iplayer-list .iplayer-list-next-btn {
+    right: 5px;
+}
+#iplayer-list .iplayer-list-content {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 50px;
+    right: 50px;
+    overflow: hidden;
+}
+#iplayer-list .iplayer-list-content .iplayer-list-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#iplayer-list .iplayer-list-content .iplayer-list-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 50px;
+    width: 100%;
+}
+#iplayer-list .iplayer-list-content .iplayer-list-cell{
+    float: left;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    cursor: pointer;
+}
+#iplayer-list .iplayer-list-content .iplayer-list-cell.active {
+    background: #fff;
+}
+
+
+/* 用于嵌入式播放器 */
+#iplayer-logo {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 120px;
+    height: 120px;
+    background: url(../image/logo-with-text.png) no-repeat;
+}
+
+
+
+#iplayer-share-code-section {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    height: 150px;
+    margin-top: -75px;
+    margin-left: -150px;
+    padding: 20px;
+    background: #fff;
+}
+#iplayer-share-code-section textarea {
+    height: 110px;
+}

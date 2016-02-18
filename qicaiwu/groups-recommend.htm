@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="图片,照片,分享,存储" />
+    <meta name="description" content="分享高品质图片与生活" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Language" content="zh-CN">
+    <meta content="origin-when-crossorigin" name="referrer" />
+	<link rel="search" type="application/opensearchdescription+xml" href="./opensearch.xml" title="七彩屋">
+	<link href="./image/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+
+    <title>七彩屋 - 分享高品质图片与生活</title>
+    <link href="./css/external.css" rel="stylesheet" type="text/css">
+    <link href="./css/common.css" rel="stylesheet" type="text/css">
+	<link href="./css/page.css" rel="stylesheet" type="text/css">
+    <link href="./css/group.css" rel="stylesheet" type="text/css">
+
+    <script src="./js/external.js" type="text/javascript"></script>
+	<script src="./js/app.js" type="text/javascript"></script>
+	<script>
+		app.user = {};
+		app.user.id = 123;
+		app.user.username = '倾听千蝶';
+		app.user.urlname = 'senntyou';
+	</script>
+    <script src="./js/common.js" type="text/javascript"></script>
+
+    
+</head>
+<body class="fixed-wrapper-1000">
+<div id="header">
+    <div class="wrapper">
+        <a href="./" class="header-logo" title="七彩屋">七彩屋</a>
+        <ul class="header-left-part">
+            <li class="left q-dropdown-hover">
+                <a href="./user-xxx.htm" class="header-link"><span class="left">我的屋</span><b class="icon icon-arrow-down"></b></a>
+                <ul class="q-dropdown-menu with-icon with-animation">
+                    <li><a href="./user-xxx.htm" class=""><i class="icon icon-arrow-r"></i>我的主页</a></li>
+                    <li><a href="./user-xxx-images-liked-vertical.htm" class=""><i class="icon icon-arrow-r"></i>我的图片</a></li>
+                    <li><a href="./user-xxx-albums-liked-list.htm" class=""><i class="icon icon-arrow-r"></i>我的专辑</a></li>
+                    <li><a href="./user-xxx-collections-liked-list.htm" class=""><i class="icon icon-arrow-r"></i>我的精选集</a></li>
+                    <li><a href="./user-xxx-galleries-liked-list.htm" class=""><i class="icon icon-arrow-r"></i>我的画廊</a></li>
+                </ul>
+            </li>
+            <li class="left"><div class="header-nav-divider"></div></li>
+            <li class="left q-dropdown-hover">
+                <a href="./images-vertical.htm" class="header-link current"><span class="left">发现</span><b class="icon icon-arrow-down"></b></a>
+                <ul class="q-dropdown-menu with-icon with-animation">
+                    <li><a href="./images-vertical.htm" class=""><i class="icon icon-arrow-r"></i>图片</a></li>
+                    <li><a href="./albums-list.htm" class=""><i class="icon icon-arrow-r"></i>专辑</a></li>
+                    <li><a href="./collections-list.htm" class=""><i class="icon icon-arrow-r"></i>精选集</a></li>
+                    <li><a href="./galleries-list.htm" class=""><i class="icon icon-arrow-r"></i>画廊</a></li>
+					<li><a href="./users-list.htm" class=""><i class="icon icon-arrow-r"></i>用户</a></li>
+					<li><a href="./tags.htm" class=""><i class="icon icon-arrow-r"></i>标签</a></li>
+                </ul>
+            </li>
+            
+            <li class="left q-dropdown-hover">
+                <a href="#" class="header-link" onclick="return false;"><span class="left">更多</span><b class="icon icon-arrow-down"></b></a>
+                <ul class="q-dropdown-menu with-icon with-animation">
+                    <li><a href="./groups-recommend.htm" class=""><i class="icon icon-arrow-r"></i>小组</a></li>
+                    <li><a href="https://github.com/senntyou/500px-android" class=""><i class="icon icon-arrow-r"></i>应用下载</a></li>
+					<li><a href="./create-album.htm" class=""><i class="icon icon-arrow-r"></i>创建专辑</a></li>
+					<li><a href="./create-collection.htm" class=""><i class="icon icon-arrow-r"></i>创建精选集</a></li>
+					<li><a href="./embed-test.htm" class=""><i class="icon icon-arrow-r"></i>嵌入式播放器</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="header-right-part">
+            <li class="footer-brief q-dropdown-hover">
+                <a class="icon icon-three-dot dot" title="页脚简要"></a>
+                <ul class="q-dropdown-menu pull-right">
+                    <li><a href="./about-me.htm" class="">关于我</a></li>
+                    <li><a href="./about-project.htm" class="">关于项目</a></li>
+                    <li><a href="/contact">联系我们</a></li>
+					<li><a href="/job" class="">加入我们</a></li>
+                    <li><a href="/declarations" class="">相关声明</a></li>
+                    <li><a href="/help-center" class="">帮助中心</a></li>
+                    <li><a href="/feedback" class="">给我们提意见</a></li>
+                </ul>
+            </li>
+            <li id="header-login" style="display: none">
+                <ul class="login">
+                    <li><a  class="btn btn-info btn-sm" href="/signup">注册</a></li>
+                    <li><a  class="btn btn-info btn-sm mgr10" href="/login">登陆</a></li>
+                </ul>
+                
+            </li>
+            <li id="header-account" style="display: block">
+                
+                <div class="header-user q-dropdown-hover">
+                    <a href="./user-xxx.htm" class="header-nav-link">
+                        <img width="26" height="26" src="./image/avatar.jpg">
+						<div class="num">99</div>
+                    </a>
+                    <ul class="q-dropdown-menu pull-right with-icon">
+                        <li><a href="./user-xxx.htm" class=""><i class="icon icon-home"></i>我的主页</a></li>
+                        <li><a href="./infocenter-inbox.htm" class=""><i class="icon icon-message"></i>我的私信<span class="message-count">99</span></a></li>
+                        <li><a href="./user-xxx-following.htm" class=""><i class="icon icon-follow"></i>粉丝与关注</a></li>
+                        <li><a href="./settings.htm" class=""><i class="icon icon-setting"></i>账号设置</a></li>
+                        <li><a href="/logout" class="logout"><i class="icon icon-logout"></i>退出</a></li>
+                    </ul>
+                    
+                </div>
+                <div class="header-message">
+                    <a title="通知" class="header-nav-link">
+                        <div class="icon icon-notification header-notification"></div>
+                        <div class="num">99</div>
+                    </a>
+                    
+                </div>
+            </li>
+            <li class="header-upload">
+                <a class="btn btn-default btn-sm" href="./upload.htm"><span>上传</span></a>
+            </li>
+        </ul>
+        <div id="header-search">
+            <form id="header-search-form"  class="search-form" method="get" action="./search-images-vertical.htm">
+                <input id="header-search-keyword" class="form-control input-sm" type="text" size="27" name="q" autocomplete="off" placeholder="图片，用户，标签..." value=""></input>
+                <input title="搜索" href="#" type="submit" class="submit icon icon-search"></input>
+            </form>
+            <div id="header-search-hint" style="display: none">
+                <ul id="header-search-hint-container">
+                </ul>
+            </div>
+        </div>
+        <div id="notify-popup" style="display: none;">
+            <div class="content">
+                <p class="loading" id="notify-popup-loading"></p>
+                <div id="notify-popup-container" style="display: none;">
+					<div class="notify-title">通知与信息</div>
+					<div class="content-block" data-content="0">
+						<div class="scroll-pane">
+							<ul id="notify-popup-inner-content">
+							</ul>
+						</div>
+						<a href="./infocenter-notice.htm" class="more">查看更多</a>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="site">
+    <div class="wrapper">
+        <div id="site-top-section">
+            <div class="underscore-nav underscore-nav-sm left">
+                <ul>
+                    <li><a href="./groups-my.htm">我的小组</a></li>
+                    <li class="active"><a>话题精选</a></li>
+                </ul>
+            </div>
+            <div class="right mgt10" style="position: relative">
+                <form type="text" name="q" action="/search" method="get" placeholder="话题，小组">
+                    <input class="form-control input-sm" type="text" placeholder="标题，标签">
+                    <input class="icon icon-search" style="position: absolute; right: 4px; bottom: 4px; width: 20px; height: 20px;cursor: pointer;" type="submit" placeholder="搜索">
+                </form>
+            </div>
+        </div>
+        <div id="site-content" class="clearfix">
+            <div class="left-part">
+                <h3>精选话题</h3>
+                <div class="mgt40">
+                    <div class="list-item">
+                        <div class="likes">21<br>回复</div>
+                        <div class="item-content">
+                          <h4><a href="./group-xxx-topic-xxx.htm">工作经验和学历哪个更重要？</a></h4>
+                          <div class="block">
+                            
+                            <p>毕业的时候才22，21就算是进入社会开始参与社会生活了，现在想想真是后悔，那个时候还可以做出很多选择，考研，或者考各种资格证，现在看来也不晚，也还有机会参与各种模式的生活中，却不知道怎么选择了，看到研究生毕业的...
+                          </p></div>
+                          <div class="source">
+                            
+                            <span class="from"><a href="./group-xxx.htm">qicaiwu小组</a></span>
+                            <span>16:52</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="likes">21<br>回复</div>
+                        <div class="item-content">
+                          <h4><a href="./group-xxx-topic-xxx.htm">工作经验和学历哪个更重要？</a></h4>
+                          <div class="block">
+                            
+                            <p>毕业的时候才22，21就算是进入社会开始参与社会生活了，现在想想真是后悔，那个时候还可以做出很多选择，考研，或者考各种资格证，现在看来也不晚，也还有机会参与各种模式的生活中，却不知道怎么选择了，看到研究生毕业的...
+                          </p></div>
+                          <div class="source">
+                            
+                            <span class="from"><a href="./group-xxx.htm">qicaiwu小组</a></span>
+                            <span>16:52</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="likes">21<br>回复</div>
+                        <div class="item-content">
+                          <h4><a href="./group-xxx-topic-xxx.htm">工作经验和学历哪个更重要？</a></h4>
+                          <div class="block">
+                            
+                            <p>毕业的时候才22，21就算是进入社会开始参与社会生活了，现在想想真是后悔，那个时候还可以做出很多选择，考研，或者考各种资格证，现在看来也不晚，也还有机会参与各种模式的生活中，却不知道怎么选择了，看到研究生毕业的...
+                          </p></div>
+                          <div class="source">
+                            
+                            <span class="from"><a href="./group-xxx.htm">qicaiwu小组</a></span>
+                            <span>16:52</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="likes">21<br>回复</div>
+                        <div class="item-content">
+                          <h4><a href="./group-xxx-topic-xxx.htm">工作经验和学历哪个更重要？</a></h4>
+                          <div class="block">
+                            
+                            <p>毕业的时候才22，21就算是进入社会开始参与社会生活了，现在想想真是后悔，那个时候还可以做出很多选择，考研，或者考各种资格证，现在看来也不晚，也还有机会参与各种模式的生活中，却不知道怎么选择了，看到研究生毕业的...
+                          </p></div>
+                          <div class="source">
+                            
+                            <span class="from"><a href="./group-xxx.htm">qicaiwu小组</a></span>
+                            <span>16:52</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="likes">21<br>回复</div>
+                        <div class="item-content">
+                          <h4><a href="./group-xxx-topic-xxx.htm">工作经验和学历哪个更重要？</a></h4>
+                          <div class="block">
+                            
+                            <p>毕业的时候才22，21就算是进入社会开始参与社会生活了，现在想想真是后悔，那个时候还可以做出很多选择，考研，或者考各种资格证，现在看来也不晚，也还有机会参与各种模式的生活中，却不知道怎么选择了，看到研究生毕业的...
+                          </p></div>
+                          <div class="source">
+                            
+                            <span class="from"><a href="./group-xxx.htm">qicaiwu小组</a></span>
+                            <span>16:52</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="likes">21<br>回复</div>
+                        <div class="item-content">
+                          <h4><a href="./group-xxx-topic-xxx.htm">工作经验和学历哪个更重要？</a></h4>
+                          <div class="block">
+                            
+                            <p>毕业的时候才22，21就算是进入社会开始参与社会生活了，现在想想真是后悔，那个时候还可以做出很多选择，考研，或者考各种资格证，现在看来也不晚，也还有机会参与各种模式的生活中，却不知道怎么选择了，看到研究生毕业的...
+                          </p></div>
+                          <div class="source">
+                            
+                            <span class="from"><a href="./group-xxx.htm">qicaiwu小组</a></span>
+                            <span>16:52</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="likes">21<br>回复</div>
+                        <div class="item-content">
+                          <h4><a href="./group-xxx-topic-xxx.htm">工作经验和学历哪个更重要？</a></h4>
+                          <div class="block">
+                            
+                            <p>毕业的时候才22，21就算是进入社会开始参与社会生活了，现在想想真是后悔，那个时候还可以做出很多选择，考研，或者考各种资格证，现在看来也不晚，也还有机会参与各种模式的生活中，却不知道怎么选择了，看到研究生毕业的...
+                          </p></div>
+                          <div class="source">
+                            
+                            <span class="from"><a href="./group-xxx.htm">qicaiwu小组</a></span>
+                            <span>16:52</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="likes">21<br>回复</div>
+                        <div class="item-content">
+                          <h4><a href="./group-xxx-topic-xxx.htm">工作经验和学历哪个更重要？</a></h4>
+                          <div class="block">
+                            
+                            <p>毕业的时候才22，21就算是进入社会开始参与社会生活了，现在想想真是后悔，那个时候还可以做出很多选择，考研，或者考各种资格证，现在看来也不晚，也还有机会参与各种模式的生活中，却不知道怎么选择了，看到研究生毕业的...
+                          </p></div>
+                          <div class="source">
+                            
+                            <span class="from"><a href="./group-xxx.htm">qicaiwu小组</a></span>
+                            <span>16:52</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="likes">21<br>回复</div>
+                        <div class="item-content">
+                          <h4><a href="./group-xxx-topic-xxx.htm">工作经验和学历哪个更重要？</a></h4>
+                          <div class="block">
+                            
+                            <p>毕业的时候才22，21就算是进入社会开始参与社会生活了，现在想想真是后悔，那个时候还可以做出很多选择，考研，或者考各种资格证，现在看来也不晚，也还有机会参与各种模式的生活中，却不知道怎么选择了，看到研究生毕业的...
+                          </p></div>
+                          <div class="source">
+                            
+                            <span class="from"><a href="./group-xxx.htm">qicaiwu小组</a></span>
+                            <span>16:52</span>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination-container">
+                    <ul class="pagination">
+                        <li class="active"><a data-page="1">1</a></li>
+                        <li><a href="#" data-page="2">2</a></li>
+                        <li><a href="#" data-page="3">3</a></li>
+                        <li><a href="#" data-page="4">4</a></li>
+                        <li><a href="#" data-page="5">5</a></li>
+                        <li><a href="#" data-page="6">6</a></li>
+                        <li><a href="#" data-page="7">7</a></li>
+                        <li><a href="#" data-page="8">8</a></li>
+                        <li class="disabled"><a>...</a></li>
+                        <li><a href="#" data-page="20">20</a></li>
+                        <li><a href="#" data-page="2">下一页</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-part">
+                <h4 class="bdb-eeeeee pdb10">推荐小组</h4>
+                <div>
+                    <div class="group-item">
+                        <div class="pic">
+                          <a href="./group-xxx.htm"><img src="./samples/avatar-1.jpg" width="48" height="48"></a>
+                        </div>
+                        <div class="info">
+                          <div class="title">
+                            <a href="./group-xxx.htm" class="">七彩屋</a>
+                          </div>
+                          <span class="num">
+                          56817个成员
+                          </span>
+                          <span class="join">
+                               <a href="./group-xxx.htm?action=join&amp;ck=EAzh" class="slim-btn" data-group_id="312709">加入小组</a>
+                          </span>
+                        </div>
+                    </div>
+                    <div class="group-item">
+                        <div class="pic">
+                          <a href="./group-xxx.htm"><img src="./samples/avatar-2.jpg" width="48" height="48"></a>
+                        </div>
+                        <div class="info">
+                          <div class="title">
+                            <a href="./group-xxx.htm" class="">七彩屋</a>
+                          </div>
+                          <span class="num">
+                          56817个成员
+                          </span>
+                          <span class="join">
+                               <a href="./group-xxx.htm?action=join&amp;ck=EAzh" class="slim-btn" data-group_id="312709">加入小组</a>
+                          </span>
+                        </div>
+                    </div>
+                    <div class="group-item">
+                        <div class="pic">
+                          <a href="./group-xxx.htm"><img src="./samples/avatar-3.jpg" width="48" height="48"></a>
+                        </div>
+                        <div class="info">
+                          <div class="title">
+                            <a href="./group-xxx.htm" class="">七彩屋</a>
+                          </div>
+                          <span class="num">
+                          56817个成员
+                          </span>
+                          <span class="join">
+                               <a href="./group-xxx.htm?action=join&amp;ck=EAzh" class="slim-btn" data-group_id="312709">加入小组</a>
+                          </span>
+                        </div>
+                    </div>
+                    <div class="group-item">
+                        <div class="pic">
+                          <a href="./group-xxx.htm"><img src="./samples/avatar-4.jpg" width="48" height="48"></a>
+                        </div>
+                        <div class="info">
+                          <div class="title">
+                            <a href="./group-xxx.htm" class="">七彩屋</a>
+                          </div>
+                          <span class="num">
+                          56817个成员
+                          </span>
+                          <span class="join">
+                               <a href="./group-xxx.htm?action=join&amp;ck=EAzh" class="slim-btn" data-group_id="312709">加入小组</a>
+                          </span>
+                        </div>
+                    </div>
+                    <div class="group-item">
+                        <div class="pic">
+                          <a href="./group-xxx.htm"><img src="./samples/avatar-5.jpg" width="48" height="48"></a>
+                        </div>
+                        <div class="info">
+                          <div class="title">
+                            <a href="./group-xxx.htm" class="">七彩屋</a>
+                          </div>
+                          <span class="num">
+                          56817个成员
+                          </span>
+                          <span class="join">
+                               <a href="./group-xxx.htm?action=join&amp;ck=EAzh" class="slim-btn" data-group_id="312709">加入小组</a>
+                          </span>
+                        </div>
+                    </div>
+                    <div class="group-item">
+                        <div class="pic">
+                          <a href="./group-xxx.htm"><img src="./samples/avatar-6.jpg" width="48" height="48"></a>
+                        </div>
+                        <div class="info">
+                          <div class="title">
+                            <a href="./group-xxx.htm" class="">七彩屋</a>
+                          </div>
+                          <span class="num">
+                          56817个成员
+                          </span>
+                          <span class="join">
+                               <a href="./group-xxx.htm?action=join&amp;ck=EAzh" class="slim-btn" data-group_id="312709">加入小组</a>
+                          </span>
+                        </div>
+                    </div>
+                    <div class="group-item">
+                        <div class="pic">
+                          <a href="./group-xxx.htm"><img src="./samples/avatar-7.jpg" width="48" height="48"></a>
+                        </div>
+                        <div class="info">
+                          <div class="title">
+                            <a href="./group-xxx.htm" class="">七彩屋</a>
+                          </div>
+                          <span class="num">
+                          56817个成员
+                          </span>
+                          <span class="join">
+                               <a href="./group-xxx.htm?action=join&amp;ck=EAzh" class="slim-btn" data-group_id="312709">加入小组</a>
+                          </span>
+                        </div>
+                    </div>
+                    <div class="group-item">
+                        <div class="pic">
+                          <a href="./group-xxx.htm"><img src="./samples/avatar-8.jpg" width="48" height="48"></a>
+                        </div>
+                        <div class="info">
+                          <div class="title">
+                            <a href="./group-xxx.htm" class="">七彩屋</a>
+                          </div>
+                          <span class="num">
+                          56817个成员
+                          </span>
+                          <span class="join">
+                               <a href="./group-xxx.htm?action=join&amp;ck=EAzh" class="slim-btn" data-group_id="312709">加入小组</a>
+                          </span>
+                        </div>
+                    </div>
+                    <div class="group-item">
+                        <div class="pic">
+                          <a href="./group-xxx.htm"><img src="./samples/avatar-9.jpg" width="48" height="48"></a>
+                        </div>
+                        <div class="info">
+                          <div class="title">
+                            <a href="./group-xxx.htm" class="">七彩屋</a>
+                          </div>
+                          <span class="num">
+                          56817个成员
+                          </span>
+                          <span class="join">
+                               <a href="./group-xxx.htm?action=join&amp;ck=EAzh" class="slim-btn" data-group_id="312709">加入小组</a>
+                          </span>
+                        </div>
+                    </div>
+                    <div class="group-item">
+                        <div class="pic">
+                          <a href="./group-xxx.htm"><img src="./samples/avatar-10.jpg" width="48" height="48"></a>
+                        </div>
+                        <div class="info">
+                          <div class="title">
+                            <a href="./group-xxx.htm" class="">七彩屋</a>
+                          </div>
+                          <span class="num">
+                          56817个成员
+                          </span>
+                          <span class="join">
+                               <a href="./group-xxx.htm?action=join&amp;ck=EAzh" class="slim-btn" data-group_id="312709">加入小组</a>
+                          </span>
+                        </div>
+                    </div>
+                    <div class="group-item">
+                        <div class="pic">
+                          <a href="./group-xxx.htm"><img src="./samples/avatar-11.jpg" width="48" height="48"></a>
+                        </div>
+                        <div class="info">
+                          <div class="title">
+                            <a href="./group-xxx.htm" class="">七彩屋</a>
+                          </div>
+                          <span class="num">
+                          56817个成员
+                          </span>
+                          <span class="join">
+                               <a href="./group-xxx.htm?action=join&amp;ck=EAzh" class="slim-btn" data-group_id="312709">加入小组</a>
+                          </span>
+                        </div>
+                    </div>
+                    <div class="group-item">
+                        <div class="pic">
+                          <a href="./group-xxx.htm"><img src="./samples/avatar-12.jpg" width="48" height="48"></a>
+                        </div>
+                        <div class="info">
+                          <div class="title">
+                            <a href="./group-xxx.htm" class="">七彩屋</a>
+                          </div>
+                          <span class="num">
+                          56817个成员
+                          </span>
+                          <span class="join">
+                               <a href="./group-xxx.htm?action=join&amp;ck=EAzh" class="slim-btn" data-group_id="312709">加入小组</a>
+                          </span>
+                        </div>
+                    </div>
+                    <div class="group-item">
+                        <div class="pic">
+                          <a href="./group-xxx.htm"><img src="./samples/avatar-13.jpg" width="48" height="48"></a>
+                        </div>
+                        <div class="info">
+                          <div class="title">
+                            <a href="./group-xxx.htm" class="">七彩屋</a>
+                          </div>
+                          <span class="num">
+                          56817个成员
+                          </span>
+                          <span class="join">
+                               <a href="./group-xxx.htm?action=join&amp;ck=EAzh" class="slim-btn" data-group_id="312709">加入小组</a>
+                          </span>
+                        </div>
+                    </div>
+                    <div class="group-item">
+                        <div class="pic">
+                          <a href="./group-xxx.htm"><img src="./samples/avatar-14.jpg" width="48" height="48"></a>
+                        </div>
+                        <div class="info">
+                          <div class="title">
+                            <a href="./group-xxx.htm" class="">七彩屋</a>
+                          </div>
+                          <span class="num">
+                          56817个成员
+                          </span>
+                          <span class="join">
+                               <a href="./group-xxx.htm?action=join&amp;ck=EAzh" class="slim-btn" data-group_id="312709">加入小组</a>
+                          </span>
+                        </div>
+                    </div>
+                    <div class="group-item">
+                        <div class="pic">
+                          <a href="./group-xxx.htm"><img src="./samples/avatar-15.jpg" width="48" height="48"></a>
+                        </div>
+                        <div class="info">
+                          <div class="title">
+                            <a href="./group-xxx.htm" class="">七彩屋</a>
+                          </div>
+                          <span class="num">
+                          56817个成员
+                          </span>
+                          <span class="join">
+                               <a href="./group-xxx.htm?action=join&amp;ck=EAzh" class="slim-btn" data-group_id="312709">加入小组</a>
+                          </span>
+                        </div>
+                    </div>
+                    <div class="group-item">
+                        <div class="pic">
+                          <a href="./group-xxx.htm"><img src="./samples/avatar-16.jpg" width="48" height="48"></a>
+                        </div>
+                        <div class="info">
+                          <div class="title">
+                            <a href="./group-xxx.htm" class="">七彩屋</a>
+                          </div>
+                          <span class="num">
+                          56817个成员
+                          </span>
+                          <span class="join">
+                               <a href="./group-xxx.htm?action=join&amp;ck=EAzh" class="slim-btn" data-group_id="312709">加入小组</a>
+                          </span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <div class="wrapper clearfix">
+		<p class="left">
+			© 2016 qicaiwu.com, all rights reserved
+		</p>
+        <p class="right">
+			<a href="./about-me.htm" class="">关于我</a>
+			<span>&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+            <a href="./about-project.htm" class="">关于项目</a>
+			<span>&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+			<a href="/contact" class="">联系我们</a>
+			<span>&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+			<a href="/job" class="">加入我们</a>
+			<span>&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+			<a href="/declarations" class="">相关声明</a>
+			<span>&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+			<a href="/help-center" class="">帮助中心</a>
+			<span>&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+			<a href="/feedback" class="">给我们提意见</a>
+		</p>
+    </div>
+</div>
+
+<div id="right-bottom-part">
+    <a class="feed-back" title="反馈意见" target="_blank" href="/feedback"><i class="icon icon-edit"></i></a>
+    <a class="to-top" title="返回顶部" onclick="return false;"><i class="icon icon-chevron-up"></i></a>
+</div>
+
+    
+</body>
+</html>

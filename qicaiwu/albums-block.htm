@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="图片,照片,分享,存储" />
+    <meta name="description" content="分享高品质图片与生活" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Language" content="zh-CN">
+    <meta content="origin-when-crossorigin" name="referrer" />
+	<link rel="search" type="application/opensearchdescription+xml" href="./opensearch.xml" title="七彩屋">
+	<link href="./image/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+
+    <title>七彩屋 - 分享高品质图片与生活</title>
+    <link href="./css/external.css" rel="stylesheet" type="text/css">
+    <link href="./css/common.css" rel="stylesheet" type="text/css">
+	<link href="./css/page.css" rel="stylesheet" type="text/css">
+
+    <script src="./js/external.js" type="text/javascript"></script>
+    <script src="./js/waterfall-full.js" type="text/javascript"></script>
+
+	<script src="./js/app.js" type="text/javascript"></script>
+	<script>
+		app.user = {};
+		app.user.id = 123;
+		app.user.username = '倾听千蝶';
+		app.user.urlname = 'senntyou';
+	</script>
+    <script src="./js/common.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function() {
+			//模板应该在外面只编译一次，而放在callbacks里面每个cell都会编译一次，大大降低效率
+			var template = Handlebars.compile(app.tpl.album_block), 
+			    options = {
+					itemCls: 'album-cell',
+                    cellWidth: 220,  
+                    cellHeight: 220,
+                    gutterWidth: 20,
+                    gutterHeight: 20,
+					path: function(page) {
+						return app.url.waterfall_albums_block + '?page=' + page;
+					},
+					/*state: {
+						curPage: 1
+					},
+					maxPage: 1,*/
+					callbacks: {
+						renderData: function (data, dataType) {
+							if ( dataType === 'json' ||  dataType === 'jsonp'  ) { // json or jsonp format
+								if (!window.imagesActionBatchProccessing) return template(data);
+								else return template_for_select(data);
+							} else { // html format
+								return data;
+							}
+						}
+					}
+				};
+            $('#waterfall').waterfallBlock(options);
+        });
+        
+    </script>
+    
+</head>
+<body>
+<div id="header">
+    <div class="wrapper">
+        <a href="./" class="header-logo" title="七彩屋">七彩屋</a>
+        <ul class="header-left-part">
+            <li class="left q-dropdown-hover">
+                <a href="./user-xxx.htm" class="header-link"><span class="left">我的屋</span><b class="icon icon-arrow-down"></b></a>
+                <ul class="q-dropdown-menu with-icon with-animation">
+                    <li><a href="./user-xxx.htm" class=""><i class="icon icon-arrow-r"></i>我的主页</a></li>
+                    <li><a href="./user-xxx-images-liked-vertical.htm" class=""><i class="icon icon-arrow-r"></i>我的图片</a></li>
+                    <li><a href="./user-xxx-albums-liked-list.htm" class=""><i class="icon icon-arrow-r"></i>我的专辑</a></li>
+                    <li><a href="./user-xxx-collections-liked-list.htm" class=""><i class="icon icon-arrow-r"></i>我的精选集</a></li>
+                    <li><a href="./user-xxx-galleries-liked-list.htm" class=""><i class="icon icon-arrow-r"></i>我的画廊</a></li>
+                </ul>
+            </li>
+            <li class="left"><div class="header-nav-divider"></div></li>
+            <li class="left q-dropdown-hover">
+                <a href="./images-vertical.htm" class="header-link current"><span class="left">发现</span><b class="icon icon-arrow-down"></b></a>
+                <ul class="q-dropdown-menu with-icon with-animation">
+                    <li><a href="./images-vertical.htm" class=""><i class="icon icon-arrow-r"></i>图片</a></li>
+                    <li><a href="./albums-list.htm" class=""><i class="icon icon-arrow-r"></i>专辑</a></li>
+                    <li><a href="./collections-list.htm" class=""><i class="icon icon-arrow-r"></i>精选集</a></li>
+                    <li><a href="./galleries-list.htm" class=""><i class="icon icon-arrow-r"></i>画廊</a></li>
+					<li><a href="./users-list.htm" class=""><i class="icon icon-arrow-r"></i>用户</a></li>
+					<li><a href="./tags.htm" class=""><i class="icon icon-arrow-r"></i>标签</a></li>
+                </ul>
+            </li>
+            
+            <li class="left q-dropdown-hover">
+                <a href="#" class="header-link" onclick="return false;"><span class="left">更多</span><b class="icon icon-arrow-down"></b></a>
+                <ul class="q-dropdown-menu with-icon with-animation">
+                    <li><a href="./groups-recommend.htm" class=""><i class="icon icon-arrow-r"></i>小组</a></li>
+                    <li><a href="https://github.com/senntyou/500px-android" class=""><i class="icon icon-arrow-r"></i>应用下载</a></li>
+					<li><a href="./create-album.htm" class=""><i class="icon icon-arrow-r"></i>创建专辑</a></li>
+					<li><a href="./create-collection.htm" class=""><i class="icon icon-arrow-r"></i>创建精选集</a></li>
+					<li><a href="./embed-test.htm" class=""><i class="icon icon-arrow-r"></i>嵌入式播放器</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="header-right-part">
+            <li class="footer-brief q-dropdown-hover">
+                <a class="icon icon-three-dot dot" title="页脚简要"></a>
+                <ul class="q-dropdown-menu pull-right">
+                    <li><a href="./about-me.htm" class="">关于我</a></li>
+                    <li><a href="./about-project.htm" class="">关于项目</a></li>
+                    <li><a href="/contact">联系我们</a></li>
+					<li><a href="/job" class="">加入我们</a></li>
+                    <li><a href="/declarations" class="">相关声明</a></li>
+                    <li><a href="/help-center" class="">帮助中心</a></li>
+                    <li><a href="/feedback" class="">给我们提意见</a></li>
+                </ul>
+            </li>
+            <li id="header-login" style="display: none">
+                <ul class="login">
+                    <li><a  class="btn btn-info btn-sm" href="/signup">注册</a></li>
+                    <li><a  class="btn btn-info btn-sm mgr10" href="/login">登陆</a></li>
+                </ul>
+                
+            </li>
+            <li id="header-account" style="display: block">
+                
+                <div class="header-user q-dropdown-hover">
+                    <a href="./user-xxx.htm" class="header-nav-link">
+                        <img width="26" height="26" src="./image/avatar.jpg">
+						<div class="num">99</div>
+                    </a>
+                    <ul class="q-dropdown-menu pull-right with-icon">
+                        <li><a href="./user-xxx.htm" class=""><i class="icon icon-home"></i>我的主页</a></li>
+                        <li><a href="./infocenter-inbox.htm" class=""><i class="icon icon-message"></i>我的私信<span class="message-count">99</span></a></li>
+                        <li><a href="./user-xxx-following.htm" class=""><i class="icon icon-follow"></i>粉丝与关注</a></li>
+                        <li><a href="./settings.htm" class=""><i class="icon icon-setting"></i>账号设置</a></li>
+                        <li><a href="/logout" class="logout"><i class="icon icon-logout"></i>退出</a></li>
+                    </ul>
+                    
+                </div>
+                <div class="header-message">
+                    <a title="通知" class="header-nav-link">
+                        <div class="icon icon-notification header-notification"></div>
+                        <div class="num">99</div>
+                    </a>
+                    
+                </div>
+            </li>
+            <li class="header-upload">
+                <a class="btn btn-default btn-sm" href="./upload.htm"><span>上传</span></a>
+            </li>
+        </ul>
+        <div id="header-search">
+            <form id="header-search-form"  class="search-form" method="get" action="./search-images-vertical.htm">
+                <input id="header-search-keyword" class="form-control input-sm" type="text" size="27" name="q" autocomplete="off" placeholder="图片，用户，标签..." value=""></input>
+                <input title="搜索" href="#" type="submit" class="submit icon icon-search"></input>
+            </form>
+            <div id="header-search-hint" style="display: none">
+                <ul id="header-search-hint-container">
+                </ul>
+            </div>
+        </div>
+        <div id="notify-popup" style="display: none;">
+            <div class="content">
+                <p class="loading" id="notify-popup-loading"></p>
+                <div id="notify-popup-container" style="display: none;">
+					<div class="notify-title">通知与信息</div>
+					<div class="content-block" data-content="0">
+						<div class="scroll-pane">
+							<ul id="notify-popup-inner-content">
+							</ul>
+						</div>
+						<a href="./infocenter-notice.htm" class="more">查看更多</a>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="site">
+    <div class="wrapper">
+        <div id="site-top-section">
+            <div class="underscore-nav left">
+                <ul>
+                    <li class="active"><a>热门专辑</a></li>
+                    <li><a href="/albums/new">最新专辑</a></li>
+                    <li><a href="/albums/follow">我的关注</a></li>
+                    <li><a href="/albums/recommend">推荐专辑</a></li>
+                </ul>
+            </div>
+            <div class="right mgt20 mgr20 pdt6">
+                <a href="./albums-list.htm" title="列表排列" class="icon icon-align-list"></a>
+                <a title="方块排列"class="icon icon-align-block active"></a>
+            </div>
+        </div>
+        <div class="clearfix mgl20 mgb20 mgr20">
+            <div class="right">
+				<div class="btn-group right mgr10">
+                  <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    瀑布流 <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="./albums-block-no-waterfall.htm" class="fs13 pointer" id="change-to-pagination">分页</a></li>
+                  </ul>
+                </div>
+
+            </div>
+        </div>
+        
+        <div id="waterfall"></div>
+    </div>
+</div>
+
+<div id="footer">
+    <div class="wrapper clearfix">
+		<p class="left">
+			© 2016 qicaiwu.com, all rights reserved
+		</p>
+        <p class="right">
+			<a href="./about-me.htm" class="">关于我</a>
+			<span>&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+            <a href="./about-project.htm" class="">关于项目</a>
+			<span>&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+			<a href="/contact" class="">联系我们</a>
+			<span>&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+			<a href="/job" class="">加入我们</a>
+			<span>&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+			<a href="/declarations" class="">相关声明</a>
+			<span>&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+			<a href="/help-center" class="">帮助中心</a>
+			<span>&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+			<a href="/feedback" class="">给我们提意见</a>
+		</p>
+    </div>
+</div>
+
+<div id="right-bottom-part">
+    <a class="feed-back" title="反馈意见" target="_blank" href="/feedback"><i class="icon icon-edit"></i></a>
+    <a class="to-top" title="返回顶部" onclick="return false;"><i class="icon icon-chevron-up"></i></a>
+</div>
+
+
+<script src="./js/diaporama.build.min.js" type="text/javascript" async="async"></script>
+<script src="./js/iplayer.js" type="text/javascript" async="async"></script>
+    
+</body>
+</html>

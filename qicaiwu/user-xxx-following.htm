@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="图片,照片,分享,存储" />
+    <meta name="description" content="分享高品质图片与生活" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Language" content="zh-CN">
+    <meta content="origin-when-crossorigin" name="referrer" />
+	<link rel="search" type="application/opensearchdescription+xml" href="./opensearch.xml" title="七彩屋">
+	<link href="./image/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+
+    <title>七彩屋 - 分享高品质图片与生活</title>
+    <link href="./css/external.css" rel="stylesheet" type="text/css">
+    <link href="./css/common.css" rel="stylesheet" type="text/css">
+	<link href="./css/page.css" rel="stylesheet" type="text/css">
+
+    <script src="./js/external.js" type="text/javascript"></script>
+    <script src="./js/waterfall-full.js" type="text/javascript"></script>
+
+	<script src="./js/app.js" type="text/javascript"></script>
+	<script>
+		app.user = {};
+		app.user.id = 123;
+		app.user.username = '倾听千蝶';
+		app.user.customUrl = 'senntyou';
+
+		app.page = {};
+		app.page.userId = 123;
+		app.page.galleryId = 123;
+	</script>
+    <script src="./js/common.js" type="text/javascript"></script>
+</head>
+<body class="fixed-wrapper-1000">
+<div id="header">
+    <div class="wrapper">
+        <a href="./" class="header-logo" title="七彩屋">七彩屋</a>
+        <ul class="header-left-part">
+            <li class="left q-dropdown-hover">
+                <a href="./user-xxx.htm" class="header-link"><span class="left">我的屋</span><b class="icon icon-arrow-down"></b></a>
+                <ul class="q-dropdown-menu with-icon with-animation">
+                    <li><a href="./user-xxx.htm" class=""><i class="icon icon-arrow-r"></i>我的主页</a></li>
+                    <li><a href="./user-xxx-images-liked-vertical.htm" class=""><i class="icon icon-arrow-r"></i>我的图片</a></li>
+                    <li><a href="./user-xxx-albums-liked-list.htm" class=""><i class="icon icon-arrow-r"></i>我的专辑</a></li>
+                    <li><a href="./user-xxx-collections-liked-list.htm" class=""><i class="icon icon-arrow-r"></i>我的精选集</a></li>
+                    <li><a href="./user-xxx-galleries-liked-list.htm" class=""><i class="icon icon-arrow-r"></i>我的画廊</a></li>
+                </ul>
+            </li>
+            <li class="left"><div class="header-nav-divider"></div></li>
+            <li class="left q-dropdown-hover">
+                <a href="./images-vertical.htm" class="header-link current"><span class="left">发现</span><b class="icon icon-arrow-down"></b></a>
+                <ul class="q-dropdown-menu with-icon with-animation">
+                    <li><a href="./images-vertical.htm" class=""><i class="icon icon-arrow-r"></i>图片</a></li>
+                    <li><a href="./albums-list.htm" class=""><i class="icon icon-arrow-r"></i>专辑</a></li>
+                    <li><a href="./collections-list.htm" class=""><i class="icon icon-arrow-r"></i>精选集</a></li>
+                    <li><a href="./galleries-list.htm" class=""><i class="icon icon-arrow-r"></i>画廊</a></li>
+					<li><a href="./users-list.htm" class=""><i class="icon icon-arrow-r"></i>用户</a></li>
+					<li><a href="./tags.htm" class=""><i class="icon icon-arrow-r"></i>标签</a></li>
+                </ul>
+            </li>
+            
+            <li class="left q-dropdown-hover">
+                <a href="#" class="header-link" onclick="return false;"><span class="left">更多</span><b class="icon icon-arrow-down"></b></a>
+                <ul class="q-dropdown-menu with-icon with-animation">
+                    <li><a href="./groups-recommend.htm" class=""><i class="icon icon-arrow-r"></i>小组</a></li>
+                    <li><a href="https://github.com/senntyou/500px-android" class=""><i class="icon icon-arrow-r"></i>应用下载</a></li>
+					<li><a href="./create-album.htm" class=""><i class="icon icon-arrow-r"></i>创建专辑</a></li>
+					<li><a href="./create-collection.htm" class=""><i class="icon icon-arrow-r"></i>创建精选集</a></li>
+					<li><a href="./embed-test.htm" class=""><i class="icon icon-arrow-r"></i>嵌入式播放器</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="header-right-part">
+            <li class="footer-brief q-dropdown-hover">
+                <a class="icon icon-three-dot dot" title="页脚简要"></a>
+                <ul class="q-dropdown-menu pull-right">
+                    <li><a href="./about-me.htm" class="">关于我</a></li>
+                    <li><a href="./about-project.htm" class="">关于项目</a></li>
+                    <li><a href="/contact">联系我们</a></li>
+					<li><a href="/job" class="">加入我们</a></li>
+                    <li><a href="/declarations" class="">相关声明</a></li>
+                    <li><a href="/help-center" class="">帮助中心</a></li>
+                    <li><a href="/feedback" class="">给我们提意见</a></li>
+                </ul>
+            </li>
+            <li id="header-login" style="display: none">
+                <ul class="login">
+                    <li><a  class="btn btn-info btn-sm" href="/signup">注册</a></li>
+                    <li><a  class="btn btn-info btn-sm mgr10" href="/login">登陆</a></li>
+                </ul>
+                
+            </li>
+            <li id="header-account" style="display: block">
+                
+                <div class="header-user q-dropdown-hover">
+                    <a href="./user-xxx.htm" class="header-nav-link">
+                        <img width="26" height="26" src="./image/avatar.jpg">
+						<div class="num">99</div>
+                    </a>
+                    <ul class="q-dropdown-menu pull-right with-icon">
+                        <li><a href="./user-xxx.htm" class=""><i class="icon icon-home"></i>我的主页</a></li>
+                        <li><a href="./infocenter-inbox.htm" class=""><i class="icon icon-message"></i>我的私信<span class="message-count">99</span></a></li>
+                        <li><a href="./user-xxx-following.htm" class=""><i class="icon icon-follow"></i>粉丝与关注</a></li>
+                        <li><a href="./settings.htm" class=""><i class="icon icon-setting"></i>账号设置</a></li>
+                        <li><a href="/logout" class="logout"><i class="icon icon-logout"></i>退出</a></li>
+                    </ul>
+                    
+                </div>
+                <div class="header-message">
+                    <a title="通知" class="header-nav-link">
+                        <div class="icon icon-notification header-notification"></div>
+                        <div class="num">99</div>
+                    </a>
+                    
+                </div>
+            </li>
+            <li class="header-upload">
+                <a class="btn btn-default btn-sm" href="./upload.htm"><span>上传</span></a>
+            </li>
+        </ul>
+        <div id="header-search">
+            <form id="header-search-form"  class="search-form" method="get" action="./search-images-vertical.htm">
+                <input id="header-search-keyword" class="form-control input-sm" type="text" size="27" name="q" autocomplete="off" placeholder="图片，用户，标签..." value=""></input>
+                <input title="搜索" href="#" type="submit" class="submit icon icon-search"></input>
+            </form>
+            <div id="header-search-hint" style="display: none">
+                <ul id="header-search-hint-container">
+                </ul>
+            </div>
+        </div>
+        <div id="notify-popup" style="display: none;">
+            <div class="content">
+                <p class="loading" id="notify-popup-loading"></p>
+                <div id="notify-popup-container" style="display: none;">
+					<div class="notify-title">通知与信息</div>
+					<div class="content-block" data-content="0">
+						<div class="scroll-pane">
+							<ul id="notify-popup-inner-content">
+							</ul>
+						</div>
+						<a href="./infocenter-notice.htm" class="more">查看更多</a>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="site">
+    <div class="wrapper">
+        <div id="site-top-section" class="bdb-eeeeee overflow-visible clearfix mgb20 pdt60">
+            <div class="left mgl20"><img class="img-circle" src="./image/avatar.jpg" width="80px" height="80px"></div>
+            <div class="left mgl20">
+                <h4 class="mgt20"><a href="/user/1234" data-name-card="1234">倾听千蝶</a></h4>
+                <p class="fs13">终有一天走进樱雨下</p>
+            </div>
+            <ul class="right pd10 fs13 mgr20 bdb-eeeeee">
+                <li class="left mgr40">
+                    <span class="mgr10 color999">粉丝</span><a href="#" class="color-01a0d8"><span>1234</span></a>
+                </li>
+                <li class="left">
+                    <span class="mgr10 color999">关注</span><a href="#" class="color-01a0d8"><span>4321</span></a>
+                </li>
+            </ul>
+            <div class="right clearfix clear-right">
+                <div class="btn-group right mgr20">
+                  <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    操作 <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="/" class="fs13">发站内信</a></li>
+                    <li><a class="fs13 pointer" onclick="report(1,1); return !1;">举报用户</a></li>
+                    <li><a href="/" class="fs13">加黑名单</a></li>
+                  </ul>
+                </div>
+                <a href="./settings.htm" class="btn btn-default btn-sm right mgr20">账号设置</a>
+            </div>
+            <div class="underscore-nav underscore-nav-sm left clear mgl20">
+                <ul>
+                    <li><a href="./user-xxx.htm">首页</a></li>
+                    <li><a href="./user-xxx-roam.htm">漫游</a></li>
+					<li><a href="./user-xxx-images-liked-list.htm">图片</a></li>
+                    <li><a href="./user-xxx-albums-liked-list.htm">专辑</a></li>
+                    <li><a href="./user-xxx-collections-liked-list.htm">精选集</a></li>
+                    <li><a href="./user-xxx-galleries-liked-list.htm">画廊</a></li>
+                    <li class="active"><a>关注与粉丝</a></li>
+					<li><a href="./user-xxx-tags.htm">标签</a></li>
+                    <li><a href="./user-xxx-message.htm">留言</a></li>
+                    <!-- 用于画廊 -->
+                    <li><a href="./user-xxx-resume.htm">简介</a></li>
+                </ul>                
+            </div>
+        </div>
+        <div class="clearfix mgt20 mgb20">
+            <div class="underscore-nav underscore-nav-sm left">
+                <ul>
+                    <li class="active"><a>关注(<span>123</span>)</a></li>
+                    <li><a href="./user-xxx-follower.htm">粉丝(<span>123</span>)</a></li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <div class="mgt20 pdlr20">
+            <div class="follow-list">
+                <ul class="follow-list clearfix">
+                    <li class="follow-list-item">
+                        <a href="#"><img src="./image/avatar.jpg" width="96px" height="96px" class="gravatar img-rounded"></a>
+                        <div class="follow-list-container">
+                            <h5 class="follow-list-name"><a href="#">倾听千蝶</a></h5>
+                            <ul class="fs13 overflow-hidden mgtb10">
+                                <li class="left mgr20">
+                                    <span class="mgr5 color999">粉丝</span><a href="#" class="color-01a0d8"><span>1234</span></a>
+                                </li>
+                                <li class="left">
+                                    <span class="mgr5 color999">关注</span><a href="#" class="color-01a0d8"><span>4321</span></a>
+                                </li>
+                            </ul>
+                            <p><a class="slim-btn slim-btn-info">取消关注</a></p>
+                        </div>
+                    </li>
+                    <li class="follow-list-item">
+                        <a href="#"><img src="./image/avatar.jpg" width="96px" height="96px" class="gravatar img-rounded"></a>
+                        <div class="follow-list-container">
+                            <h5 class="follow-list-name"><a href="#">倾听千蝶</a></h5>
+                            <ul class="fs13 overflow-hidden mgtb10">
+                                <li class="left mgr20">
+                                    <span class="mgr5 color999">粉丝</span><a href="#" class="color-01a0d8"><span>1234</span></a>
+                                </li>
+                                <li class="left">
+                                    <span class="mgr5 color999">关注</span><a href="#" class="color-01a0d8"><span>4321</span></a>
+                                </li>
+                            </ul>
+                            <p><a class="slim-btn slim-btn-info">取消关注</a></p>
+                        </div>
+                    </li>
+                    <li class="follow-list-item">
+                        <a href="#"><img src="./image/avatar.jpg" width="96px" height="96px" class="gravatar img-rounded"></a>
+                        <div class="follow-list-container">
+                            <h5 class="follow-list-name"><a href="#">倾听千蝶</a></h5>
+                            <ul class="fs13 overflow-hidden mgtb10">
+                                <li class="left mgr20">
+                                    <span class="mgr5 color999">粉丝</span><a href="#" class="color-01a0d8"><span>1234</span></a>
+                                </li>
+                                <li class="left">
+                                    <span class="mgr5 color999">关注</span><a href="#" class="color-01a0d8"><span>4321</span></a>
+                                </li>
+                            </ul>
+                            <p><a class="slim-btn slim-btn-info">取消关注</a></p>
+                        </div>
+                    </li>
+                    <li class="follow-list-item">
+                        <a href="#"><img src="./image/avatar.jpg" width="96px" height="96px" class="gravatar img-rounded"></a>
+                        <div class="follow-list-container">
+                            <h5 class="follow-list-name"><a href="#">倾听千蝶</a></h5>
+                            <ul class="fs13 overflow-hidden mgtb10">
+                                <li class="left mgr20">
+                                    <span class="mgr5 color999">粉丝</span><a href="#" class="color-01a0d8"><span>1234</span></a>
+                                </li>
+                                <li class="left">
+                                    <span class="mgr5 color999">关注</span><a href="#" class="color-01a0d8"><span>4321</span></a>
+                                </li>
+                            </ul>
+                            <p><a class="slim-btn slim-btn-info">取消关注</a></p>
+                        </div>
+                    </li>
+                    <li class="follow-list-item">
+                        <a href="#"><img src="./image/avatar.jpg" width="96px" height="96px" class="gravatar img-rounded"></a>
+                        <div class="follow-list-container">
+                            <h5 class="follow-list-name"><a href="#">倾听千蝶</a></h5>
+                            <ul class="fs13 overflow-hidden mgtb10">
+                                <li class="left mgr20">
+                                    <span class="mgr5 color999">粉丝</span><a href="#" class="color-01a0d8"><span>1234</span></a>
+                                </li>
+                                <li class="left">
+                                    <span class="mgr5 color999">关注</span><a href="#" class="color-01a0d8"><span>4321</span></a>
+                                </li>
+                            </ul>
+                            <p><a class="slim-btn slim-btn-info">取消关注</a></p>
+                        </div>
+                    </li>
+                    <li class="follow-list-item">
+                        <a href="#"><img src="./image/avatar.jpg" width="96px" height="96px" class="gravatar img-rounded"></a>
+                        <div class="follow-list-container">
+                            <h5 class="follow-list-name"><a href="#">倾听千蝶</a></h5>
+                            <ul class="fs13 overflow-hidden mgtb10">
+                                <li class="left mgr20">
+                                    <span class="mgr5 color999">粉丝</span><a href="#" class="color-01a0d8"><span>1234</span></a>
+                                </li>
+                                <li class="left">
+                                    <span class="mgr5 color999">关注</span><a href="#" class="color-01a0d8"><span>4321</span></a>
+                                </li>
+                            </ul>
+                            <p><a class="slim-btn slim-btn-info">取消关注</a></p>
+                        </div>
+                    </li>
+                    <li class="follow-list-item">
+                        <a href="#"><img src="./image/avatar.jpg" width="96px" height="96px" class="gravatar img-rounded"></a>
+                        <div class="follow-list-container">
+                            <h5 class="follow-list-name"><a href="#">倾听千蝶</a></h5>
+                            <ul class="fs13 overflow-hidden mgtb10">
+                                <li class="left mgr20">
+                                    <span class="mgr5 color999">粉丝</span><a href="#" class="color-01a0d8"><span>1234</span></a>
+                                </li>
+                                <li class="left">
+                                    <span class="mgr5 color999">关注</span><a href="#" class="color-01a0d8"><span>4321</span></a>
+                                </li>
+                            </ul>
+                            <p><a class="slim-btn slim-btn-info">取消关注</a></p>
+                        </div>
+                    </li>
+                    <li class="follow-list-item">
+                        <a href="#"><img src="./image/avatar.jpg" width="96px" height="96px" class="gravatar img-rounded"></a>
+                        <div class="follow-list-container">
+                            <h5 class="follow-list-name"><a href="#">倾听千蝶</a></h5>
+                            <ul class="fs13 overflow-hidden mgtb10">
+                                <li class="left mgr20">
+                                    <span class="mgr5 color999">粉丝</span><a href="#" class="color-01a0d8"><span>1234</span></a>
+                                </li>
+                                <li class="left">
+                                    <span class="mgr5 color999">关注</span><a href="#" class="color-01a0d8"><span>4321</span></a>
+                                </li>
+                            </ul>
+                            <p><a class="slim-btn slim-btn-info">取消关注</a></p>
+                        </div>
+                    </li>
+                    <li class="follow-list-item">
+                        <a href="#"><img src="./image/avatar.jpg" width="96px" height="96px" class="gravatar img-rounded"></a>
+                        <div class="follow-list-container">
+                            <h5 class="follow-list-name"><a href="#">倾听千蝶</a></h5>
+                            <ul class="fs13 overflow-hidden mgtb10">
+                                <li class="left mgr20">
+                                    <span class="mgr5 color999">粉丝</span><a href="#" class="color-01a0d8"><span>1234</span></a>
+                                </li>
+                                <li class="left">
+                                    <span class="mgr5 color999">关注</span><a href="#" class="color-01a0d8"><span>4321</span></a>
+                                </li>
+                            </ul>
+                            <p><a class="slim-btn slim-btn-info">取消关注</a></p>
+                        </div>
+                    </li>
+                    <li class="follow-list-item">
+                        <a href="#"><img src="./image/avatar.jpg" width="96px" height="96px" class="gravatar img-rounded"></a>
+                        <div class="follow-list-container">
+                            <h5 class="follow-list-name"><a href="#">倾听千蝶</a></h5>
+                            <ul class="fs13 overflow-hidden mgtb10">
+                                <li class="left mgr20">
+                                    <span class="mgr5 color999">粉丝</span><a href="#" class="color-01a0d8"><span>1234</span></a>
+                                </li>
+                                <li class="left">
+                                    <span class="mgr5 color999">关注</span><a href="#" class="color-01a0d8"><span>4321</span></a>
+                                </li>
+                            </ul>
+                            <p><a class="slim-btn slim-btn-info">取消关注</a></p>
+                        </div>
+                    </li>
+                    <li class="follow-list-item">
+                        <a href="#"><img src="./image/avatar.jpg" width="96px" height="96px" class="gravatar img-rounded"></a>
+                        <div class="follow-list-container">
+                            <h5 class="follow-list-name"><a href="#">倾听千蝶</a></h5>
+                            <ul class="fs13 overflow-hidden mgtb10">
+                                <li class="left mgr20">
+                                    <span class="mgr5 color999">粉丝</span><a href="#" class="color-01a0d8"><span>1234</span></a>
+                                </li>
+                                <li class="left">
+                                    <span class="mgr5 color999">关注</span><a href="#" class="color-01a0d8"><span>4321</span></a>
+                                </li>
+                            </ul>
+                            <p><a class="slim-btn slim-btn-info">取消关注</a></p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="pagination-container">
+              <ul class="pagination">
+                <li>
+                  <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">上一页</span>
+                  </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                  <a href="#" aria-label="Next">
+                    <span aria-hidden="true">下一页</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <div class="wrapper clearfix">
+		<p class="left">
+			© 2016 qicaiwu.com, all rights reserved
+		</p>
+        <p class="right">
+			<a href="./about-me.htm" class="">关于我</a>
+			<span>&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+            <a href="./about-project.htm" class="">关于项目</a>
+			<span>&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+			<a href="/contact" class="">联系我们</a>
+			<span>&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+			<a href="/job" class="">加入我们</a>
+			<span>&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+			<a href="/declarations" class="">相关声明</a>
+			<span>&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+			<a href="/help-center" class="">帮助中心</a>
+			<span>&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+			<a href="/feedback" class="">给我们提意见</a>
+		</p>
+    </div>
+</div>
+
+<div id="right-bottom-part">
+    <a class="feed-back" title="反馈意见" target="_blank" href="/feedback"><i class="icon icon-edit"></i></a>
+    <a class="to-top" title="返回顶部" onclick="return false;"><i class="icon icon-chevron-up"></i></a>
+</div>
+
+
+<script src="./js/diaporama.build.min.js" type="text/javascript" async="async"></script>
+<script src="./js/iplayer.js" type="text/javascript" async="async"></script>
+    
+</body>
+</html>

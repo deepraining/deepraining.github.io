@@ -1,0 +1,219 @@
+/* 图标总类，要使用图标必须先使用此类，默认20x20 */
+.icon {
+    text-indent: 100%;
+    display: inline-block;
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle !important;
+    background: url(../image/icon.png) no-repeat;
+}
+
+.icon-arrow-down {
+    background-position: 0 0;
+    width: 10px;
+    height: 10px;
+}
+.icon-arrow-up {
+    background-position: -20px 0;
+    width: 10px;
+    height: 10px;
+}
+
+.icon-search {
+    background-position: -40px 0;
+}
+.icon-search:hover {
+    background-position: -60px 0;
+}
+.icon-notification {
+    background-position: -80px 0;
+}
+.icon-notification:hover {
+    background-position: -100px 0;
+}
+.icon-triangle-rb {
+    width: 10px;
+    height: 10px;
+    background-position: -120px 0;
+}
+.icon-triangle-top {
+    width: 20px;
+    height: 10px;
+    background-position: -140px 0;
+}
+.icon-arrow-r {
+    background-position: -160px 0;
+    width: 10px;
+    height: 10px
+}
+.icon-home {
+    background-position: 0 -20px;
+}
+.icon-follow {
+    background-position: -20px -20px;
+}
+.icon-message {
+    background-position: -40px -20px;
+}
+.icon-setting {
+    background-position: -60px -20px;
+}
+.icon-logout {
+    background-position: -80px -20px;
+}
+
+
+.icon-heart, .icon-like {
+    background-position: -140px -20px;
+}
+/*
+.icon-heart:hover, .icon-like:hover {
+    background-position: -100px -20px;
+}
+*/
+.icon-heart.active, .icon-heart-full, .icon-like.active, .icon-liked {
+    background-position: -120px -20px;
+}
+.icon-hook, .icon-select {
+    background-position: 0 -40px;
+}
+
+.icon-hook.active, .icon-select.active {
+    background-position: -20px -40px;
+}
+
+.icon-expand, .icon-fullscreen {
+    background-position: -40px -40px;
+}
+/*
+.icon-expand:hover, .icon-fullscreen:hover {
+    background-position: -60px -40px;
+}
+*/
+.icon-shrink, .icon-exit-fullscreen {
+    background-position: -80px -40px;
+}
+/*
+.icon-shrink:hover, .icon-exit-fullscreen:hover {
+    background-position: -1000px -40px;
+}
+*/
+
+.icon-plus, .icon-add-to {
+    background-position: -140px -40px;
+}
+/*
+.icon-plus:hover, .icon-add-to:hover {
+    background-position: -120px -40px;
+}
+*/
+.icon-forward, .icon-share {
+    background-position: -160px -40px;
+}
+/*
+.icon-forward:hover, .icon-share:hover {
+    background-position: -180px -40px;
+}
+*/
+
+.icon-align-horizontal {
+    background-position: 0 -60px;
+}
+.icon-align-horizontal:hover {
+    background-position: -20px -60px;
+}
+.icon-align-horizontal.active {
+    background-position: -40px -60px;
+}
+.icon-align-vertical {
+    background-position: -60px -60px;
+}
+.icon-align-vertical:hover {
+    background-position: -80px -60px;
+}
+.icon-align-vertical.active {
+    background-position: -100px -60px;
+}
+.icon-align-panel {
+    background-position: -120px -60px;
+}
+.icon-align-panel:hover {
+    background-position: -140px -60px;
+}
+.icon-align-panel.active {
+    background-position: -160px -60px;
+}
+
+.icon-chevron-up, .icon-return-top {
+    width: 24px;
+    height: 20px;
+    background-position: 0 -100px;
+}
+.icon-edit {
+    width: 24px;
+    height: 20px;
+    background-position: -30px -100px;
+}
+.icon-align-block {
+    background-position: 0 -120px;
+}
+.icon-align-block:hover {
+    background-position: -20px -120px;
+}
+.icon-align-block.active {
+    background-position: -40px -120px;
+}
+.icon-align-list {
+    background-position: -60px -120px;
+}
+.icon-align-list:hover {
+    background-position: -80px -120px;
+}
+.icon-align-list.active {
+    background-position: -100px -120px;
+}
+.icon-three-dot {
+    background-position: 0 -140px;
+    width: 20px;
+    height: 10px;
+}
+.icon-images-manage {
+    background-position: -20px -140px;
+}
+.icon-gallery {
+    background-position: -40px -140px;
+}
+.icon-hook-small, .icon-followed-small {
+    width: 10px;
+    height: 10px;
+    background-position: 0 -160px;
+}
+.icon-fork-small, .icon-unfollow-small {
+    width: 10px;
+    height: 10px;
+    background-position: -10px -160px;
+}
+.icon-plus-small, .icon-follow-small {
+    width: 10px;
+    height: 10px;
+    background-position: -20px -160px;
+}
+.icon-delete-small {
+    background-position: 0 -80px;
+}
+.icon-delete-small-gray {
+    background-position: -20px -80px;
+}
+.icon-edit-small {
+    background-position: -40px -80px;
+}
+.icon-delete-small-gray {
+    background-position: -60px -80px;
+}
+.icon-download {
+	background-position: -80px -80px;
+}
+.icon-download-gray {
+	background-position: -100px -80px;
+}

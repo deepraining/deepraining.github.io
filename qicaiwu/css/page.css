@@ -1,0 +1,212 @@
+
+#site {
+    position: relative;
+    margin-top: 3px;
+}
+#site-top-section {
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+}
+#site-top-section a,
+#site-top-section a:hover {
+    text-decoration: none;
+}
+
+
+
+.roam-item {
+    position: relative;
+    width: 100px;
+    overflow: hidden;
+}
+.roam-item p {
+    width: 100px;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+.roam-item .roam-item-cancel-like {
+    opacity: 0;
+}
+.roam-item:hover .roam-item-cancel-like {
+    opacity: 1;
+}
+
+
+.search-head {
+    position: relative;
+    padding-left: 20px;
+}
+.search-head-title {
+    float: left;
+    margin: 0 20px;
+    line-height: 30px;
+}
+.search-head-search {
+    position: relative;
+    min-width: 240px;
+}
+
+
+#site-content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.pagination-container {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+#comment {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.comment-edit-section {
+    position: relative;
+    padding: 10px 10px 10px 70px;
+    background-color: #f8f8f8;
+    _zoom: 1;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.comment-edit-section .avatar {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+
+
+.page-album-detail {
+    position: relative;
+    padding: 20px;
+    height: 260px;
+    overflow: hidden;
+}
+.page-album-detail .page-album-cover {
+    float: left;
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+.page-album-detail .page-album-detail-info {
+    float: left;
+    margin-left: 20px;
+    max-width: 700px;
+    height: 240px;
+    overflow: hidden;
+    background-color: #fff;
+}
+.page-album-detail .page-album-stat {
+    border-bottom: 1px #ccc dashed;
+
+}
+.page-album-detail .page-album-description {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 13px;
+    overflow: hidden;
+}
+.page-album-actions {
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+
+
+
+.page-image-content {
+    position: relative;
+    width: 100%;
+    padding: 60px 0 20px;
+    text-align: center;
+}
+.page-image-content img {
+    max-width: 1000px;
+    max-height: 480px;
+    height: auto;
+}
+.page-image-content-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+.page-image-author {
+    overflow: hidden;
+}
+.page-image-description {
+    margin-top: 20px;
+    padding: 20px;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+.page-image-tag {
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+
+
+.settings-unit {
+    margin: 20px;
+}
+.settings-unit table {
+    font-size: 14px;
+}
+.settings-unit .name {
+    text-align: right;
+    width: 90px;
+    line-height: 30px;
+    vertical-align: top;
+    padding-right: 10px;
+}
+.settings-unit td {
+    padding: 5px 0;
+}
+
+
+.avatar-origin {
+    display: inline-block;
+    overflow: hidden;
+    line-height: 1;
+    vertical-align: middle;
+    border-radius: 3px;
+    max-width: 250px;
+    max-height: 250px;
+    border: 12px solid #FFF;
+    box-shadow: 0px 1px 1px rgba(34, 25, 25, 0.4);
+}
+.avatar-origin img {
+    max-width: 250px;
+    max-height: 250px;
+}
+.avatar-upload {
+    float: left;
+    width: 340px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.tag-head-section {
+    padding: 20px 20px 0;
+    margin-right: 20px;
+    height: 50px;
+    font-size: 18px;
+}
+.tag-head-section span {
+    line-height: 30px;
+}

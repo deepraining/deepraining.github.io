@@ -1,0 +1,293 @@
+{
+    "total": 20, 
+    "items": [
+        {
+            "thumbnailSrc": "./samples/avatar-1.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 1, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 1000
+        }, 
+        {
+            "thumbnailSrc": "./samples/avatar-2.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 2, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 2000
+        }, 
+        {
+            "thumbnailSrc": "./samples/avatar-3.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 3, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 3000
+        }, 
+        {
+            "thumbnailSrc": "./samples/avatar-4.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 4, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 4000
+        }, 
+        {
+            "thumbnailSrc": "./samples/avatar-5.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 5, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 5000
+        }, 
+        {
+            "thumbnailSrc": "./samples/avatar-6.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 6, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 6000
+        }, 
+        {
+            "thumbnailSrc": "./samples/avatar-7.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 7, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 7000
+        }, 
+        {
+            "thumbnailSrc": "./samples/avatar-8.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 8, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 8000
+        },
+        {
+            "thumbnailSrc": "./samples/avatar-9.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 9, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 9000
+        }, 
+        {
+            "thumbnailSrc": "./samples/avatar-10.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 10, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 10000
+        }, 
+        {
+            "thumbnailSrc": "./samples/avatar-11.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 11, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 11000
+        }, 
+        {
+            "thumbnailSrc": "./samples/avatar-12.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 12, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 12000
+        }, 
+        {
+            "thumbnailSrc": "./samples/avatar-13.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 13, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 13000
+        }, 
+        {
+            "thumbnailSrc": "./samples/avatar-14.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 14, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 14000
+        }, 
+        {
+            "thumbnailSrc": "./samples/avatar-15.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 15, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 15000
+        }, 
+        {
+            "thumbnailSrc": "./samples/avatar-16.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 16, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 16000
+        }, 
+                {
+            "thumbnailSrc": "./samples/avatar-1.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 1, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 1000
+        }, 
+        {
+            "thumbnailSrc": "./samples/avatar-2.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 2, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 2000
+        }, 
+        {
+            "thumbnailSrc": "./samples/avatar-3.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 3, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 3000
+        }, 
+        {
+            "thumbnailSrc": "./samples/avatar-4.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 4, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 4000
+        }, 
+        {
+            "thumbnailSrc": "./samples/avatar-5.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 5, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 5000
+        }, 
+        {
+            "thumbnailSrc": "./samples/avatar-6.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 6, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 6000
+        }, 
+        {
+            "thumbnailSrc": "./samples/avatar-7.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 7, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 7000
+        }, 
+        {
+            "thumbnailSrc": "./samples/avatar-8.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 8, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 8000
+        },
+        {
+            "thumbnailSrc": "./samples/avatar-9.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 9, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 9000
+        }, 
+        {
+            "thumbnailSrc": "./samples/avatar-10.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 10, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 10000
+        }, 
+        {
+            "thumbnailSrc": "./samples/avatar-11.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 11, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 11000
+        }, 
+        {
+            "thumbnailSrc": "./samples/avatar-12.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 12, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 12000
+        }, 
+        {
+            "thumbnailSrc": "./samples/avatar-13.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 13, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 13000
+        }, 
+        {
+            "thumbnailSrc": "./samples/avatar-14.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 14, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 14000
+        }, 
+        {
+            "thumbnailSrc": "./samples/avatar-15.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 15, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 15000
+        }, 
+        {
+            "thumbnailSrc": "./samples/avatar-16.jpg", 
+            "galleryName": "我的世界", 
+            "galleryId": 16, 
+            "isUser": false, 
+            "followed": true, 
+            "galleryHref": "./gallery-xxx.htm", 
+            "fansCount": 16000
+        }
+    ]
+}
