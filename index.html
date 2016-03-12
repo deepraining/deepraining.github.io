@@ -23,11 +23,20 @@
 	</script>
     <script type="text/javascript" src="http://libs.baidu.com/jqueryui/1.9.2/jquery-ui.min.js"></script>
     <script type="text/javascript" src="./js/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.particleground.min.js"></script>
+    <script>
+        $(document).ready(function() {
+          $('#bg').particleground({
+            dotColor: '#5cbdaa',
+            lineColor: '#5cbdaa'
+          });
+        });
+    </script>
 
     <title>听见  -  听见一个世界</title>
 </head>
 
-<body>
+<body style="background: #f9f9f9;">
 
 <div id="container">
     <div id="section-1" class="section section-1">
@@ -93,6 +102,7 @@
     </div>
 
 </div>
+<div id="bg" class="bg" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: -1000;"></div>
 
 <script type="text/javascript">
 $(document).ready(function() {
