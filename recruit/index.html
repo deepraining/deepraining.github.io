@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>这是UBK一行走心的求贤广告</title>
+    <meta name="renderer" content="webkit">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="fullscreen=yes,preventMove=no" name="ML-Config">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <script>
+        (function (win){
+            var doc = win.document;
+            var html = doc.documentElement;
+            var   resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+                    recalc = function() {
+                        var clientWidth = html.clientWidth>720?720:html.clientWidth;
+                        html.style.fontSize = clientWidth / 720*60 + 'px';
+                    };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+            recalc();
+        })(window);
+    </script>
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css"/>
+    <link rel="stylesheet" href="css/base.css?v=1.0"/>
+    <audio id="home_music" src="./music/home.mp3" loop="loop" hidden="true" autoplay="autoplay" preload="auto"></audio>
+</head>
+<body>
+<div class="music hide">
+    <audio id="recruit_music" loop="loop" hidden="true" autoplay="autoplay"></audio>
+    <audio id="jianpan_music" hidden="true" autoplay="autoplay"></audio>
+    <audio id="us_music" hidden="true" autoplay="autoplay"></audio>
+</div>
+<img src="img/link_img.jpg" width="300" height="300" style="position: absolute;left: -300px;top: -300px;opacity: 0;">
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" id="homePage">
+            <div class="home_loding">
+                <div class="loding loding_a"></div>
+                <div class="loding loding_b"></div>
+                <div class="loding loding_c"></div>
+            </div>
+            <div class="home_clock">
+                <div class="clock_box"></div>
+            </div>
+            <img width="480%" height="480%" class="home_bg hide">
+            <div class="text_box">
+                <div class="text clear">
+                    <div class="fr" id="home_t1">漆黑的深夜,寂寞的现实,</div>
+                    <div class="fr" style="padding-top: 1.25rem;" id="home_t2">这样的生活,何去何从?</div>
+                </div>
+            </div>
+            <div class="next_btn hide"></div>
+        </div>
+        <div class="swiper-slide" id="code" datatype='1' datainit='no'>
+            <div class="code_box">
+            </div>
+            <div class="next_btn hide"></div>
+        </div>
+        <div class="swiper-slide" id="bug" datatype='2' datainit='no'>
+            <div class="text_box">
+                <div class="text clear" style="right: 4.5rem;">
+                    <div class="fr" id="bug_t1">然而代码和生活一样,</div>
+                    <div class="fr" style="padding-top: 1.25rem;" id="bug_t2">是否同样有层出不穷的问题?</div>
+                </div>
+            </div>
+            <div class="bug_bug_text hide"></div>
+            <div class="next_btn hide"></div>
+        </div>
+        <div class="swiper-slide" id="smoke" datatype='3' datainit='no'>
+            <div class="text_box">
+                <div class="text clear" style="right: 4rem;top: 4rem;width: 5.5rem;">
+                    <div class="fr" id="smoke_t1">一个优秀的程序员,</div>
+                    <div class="fr" style="padding-top: 1.25rem;" id="smoke_t2">能修复程序中所有的bug</div>
+                    <div class="fr" style="margin-right: .8rem" id="smoke_t3">一个优秀的团队,</div>
+                    <div class="fr" style="padding-top: 1.25rem;" id="smoke_t4">能修复生活中所有的bug</div>
+                </div>
+            </div>
+            <div class="smoke_bg"></div>
+            <div class="smoke_code hide">
+            </div>
+            <div id="smoke_code_html" class="hide">
+                System.out.println("<span class="txt_light">Hello World !<br/>
+                 这是一行走心的</span><span class="txt_light">求贤广告");</span><br/><br/>
+                if (<span class="txt_light">yourDream == true && (money<br>
+                &emsp;*</span><span class="txt_light">Year * 3) == Infinity</span>)<br/><br/>
+                {<br/><br/>
+                &emsp;List&lt;Job&gt;  Jobs = new ArrayList&lt;Job&gt;();<br/><br/>
+                }
+            </div>
+            <div class="next_btn hide"></div>
+        </div>
+        <div class="swiper-slide recruit" id="recruit_a" datatype='4' datainit='no'>
+            <div class="rec_light"></div>
+            <div class="rec_top_text"></div>
+            <div class="rec_bottom_text"></div>
+            <div class="rec_man"></div>
+            <div class="next_btn hide"></div>
+        </div>
+        <div class="swiper-slide recruit" id="recruit_b" datatype='5' datainit='no'>
+            <div class="rec_light"></div>
+            <div class="rec_top_text"></div>
+            <div class="rec_bottom_text"></div>
+            <div class="rec_man"></div>
+            <div class="next_btn hide"></div>
+        </div>
+        <div class="swiper-slide recruit" id="recruit_c" datatype='6' datainit='no'>
+            <div class="rec_light"></div>
+            <div class="rec_top_text"></div>
+            <div class="rec_bottom_text"></div>
+            <div class="rec_man"></div>
+            <div class="next_btn hide"></div>
+        </div>
+        <div class="swiper-slide" id="team" datatype='7' datainit='no'>
+            <div class="team_box clear">
+                <div class="ttb_item">
+                    <div class="tbi_title tbi_title_c fr" id="team_t1"></div>
+                    <div class="tbi_text fr" id="team_t2">我们奋斗<b>446</b>天 &nbsp;, <b>8</b>位战</div>
+                    <div class="tbi_text fr" style="margin-right: .2rem;" id="team_t3">友曾经离开,踏实而遗憾</div>
+                </div>
+                <div class="ttb_item">
+                    <div class="tbi_title tbi_title_b fr" id="team_t4"></div>
+                    <div class="tbi_text fr" id="team_t5">我们为了无限的未来, <b>&nbsp;12</b>位战友浴血奋战,</div>
+                    <div class="tbi_text fr" style="margin-right: .2rem;" id="team_t6">坚持而幸运</div>
+                </div>
+                <div class="ttb_item">
+                    <div class="tbi_title tbi_title_a fr" id="team_t7"></div>
+                    <div class="tbi_text fr" id="team_t8">我们一往无前,一直在等你,兴奋并期待</div>
+                </div>
+            </div>
+            <div class="next_btn hide"></div>
+        </div>
+        <div class="swiper-slide" id="fenxiang" datatype='8' datainit='no'>
+            <img src="img/eRweima.jpg" class="erweima">
+            <div id="fenxiang_btn">分享支持小武哥</div>
+        </div>
+    </div>
+</div>
+<div class="fenx_mask hide"></div>
+
+<script src="js/swiper-3.3.1.min.js"></script>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script>
+    //初始化静态资源
+    var hm=document.getElementById('home_music');
+    var rm=document.getElementById('recruit_music');
+    var jm=document.getElementById('jianpan_music');
+    var um=document.getElementById('us_music');
+    $(function(){
+       fn.initStatic();
+       fn._init();
+    });
+    var fn={
+        showTime:0,
+        _init:function(){
+            fn.initSwiper();
+            //分享事件
+            $('#fenxiang_btn').click(function(){
+                $('.fenx_mask').removeClass('hide');
+            });
+            $('.fenx_mask').click(function(){
+                $(this).addClass('hide');
+            });
+            //loding 3s显示时钟
+            window.setTimeout(function(){
+                fn.showClock();
+                //播放音乐
+                $('#home_music').attr('src','music/home.mp3');
+            },3300);
+            //事件
+            $('#fenxiang_btn').click(function(){
+                $('.fenx_mask').removeClass('hide');
+            });
+            $('.fenx_mask').click(function(){
+                $(this).addClass('hide');
+            });
+        },
+        initSwiper:function(){
+            var swiperH = new Swiper('.swiper-container',{
+                direction: 'vertical',
+                nextButton:'.next_btn',
+                speed:800,
+                onSlideChangeEnd:function(){
+                    //上下切换时 判断并执行相关代码界面的动画
+                    var obj=$('.swiper-slide-active');
+                    var type=obj.attr('datatype');
+                    var _init=obj.attr('datainit');
+                    if(_init == 'no'){
+                        if(type == '1'){
+                            $('#jianpan_music').attr('src','music/jianpan.mp3');
+                            fn.initCode();
+                            obj.attr('datainit','yes');
+                        }else if(type == '2'){
+                            fn.initBug();
+                            obj.attr('datainit','yes');
+                            //播放音乐
+                            if(hm.pause){
+                                hm.play();
+                            }
+                        }else if(type == '3'){
+                            fn.initSmoke();
+                            obj.attr('datainit','yes');
+                        }else if(type == '4'){
+                            fn.initRecruit('#recruit_a');
+                            obj.attr('datainit','yes');
+                            //播放音乐
+                            rm.volume=1;
+                            $('#recruit_music').attr('src','music/code_b.mp3');
+                        }else if(type == '5'){
+                            fn.initRecruit('#recruit_b');
+                            obj.attr('datainit','yes');
+                        }else if(type == '6'){
+                            fn.initRecruit('#recruit_c');
+                            obj.attr('datainit','yes');
+                        }else if(type == '7'){
+                            fn.initTeam();
+                            obj.attr('datainit','yes');
+                        }else if(type == '8'){
+                            //播放音乐
+                            rm.volume=0.6;
+                            $('#us_music').attr('src','music/us.mp3');
+                            if(um.pause){
+                                um.play();
+                            }
+                        }
+                    }else{
+                        if(type == '2'){
+                            //播放音乐
+                            if(hm.pause){
+                                hm.play();
+                            }
+                            rm.pause();
+                        }else if(type == '4'){
+                            //播放音乐
+                            if(rm.pause){
+                                rm.play();
+                            }
+                            hm.pause();
+                        }
+                    }
+                }
+            });
+        },
+        showClock:function(){
+            //隐藏loding
+            $('.home_loding').fadeOut(200);
+            var count=0;
+            var timer=window.setInterval(function(){
+                count++;
+                if(count == 1){
+                    //set class name b
+                    $('.clock_box').addClass('b');
+                }else if(count == 2){
+                    //set class name c
+                    $('.clock_box').removeClass('b');
+                }else if(count == 3){
+                    //set class name b
+                    $('.clock_box').addClass('b');
+                }else{
+                    //stop and show home img
+//                    window.setTimeout(function(){
+                        $('.home_clock').addClass('hide');
+                        fn.initHomeImg();
+//                    },500);
+                    window.clearInterval(timer);
+                }
+            },1000);
+        },
+        initHomeImg:function(){
+           $('.home_bg').removeClass('hide').attr('src','img/home_bg.jpg');
+           $('.home_bg').animate({
+               width:'100%',
+               height:'100%',
+               top:0
+           },2000,function(){
+               //显示文案
+               $('#home_t1').slideDown(3000,function(){
+                   $('#home_t2').slideDown(3000,function(){
+                       $('#homePage .next_btn').removeClass('hide');
+                   });
+               });
+           });
+        },
+        initStatic:function(){
+            var img1=new Image();
+            img1.src='img/home_bg.jpg';
+        },
+        initCode:function(){
+            $('.code_box').css('bottom',8.2+8.2*(0.60-($(window).width()/$(window).height()).toFixed(2))+'rem');
+
+            fn.printCode('System.out.println<br/>("<span class="txt_light">Hello World ! 这是一行走</span><br/><span class="txt_light">心的求贤广告");</span>','.code_box',110,function(){
+                $('#code .next_btn').click();
+            });
+        },
+        initBug:function(){
+            window.setTimeout(function(){
+                $('.bug_bug_text').removeClass('hide');
+            },1000);
+            window.setTimeout(function(){
+                //显示文字
+                $('#bug_t1').slideDown(3000,function(){
+                    $('#bug_t2').slideDown(3000,function(){
+                        $('#bug .next_btn').removeClass('hide');
+                    });
+                });
+            },2000);
+        },
+        initSmoke:function(){
+            //显示文字
+            $('#smoke_t1').slideDown(3000,function(){
+                $('#smoke_t2').slideDown(3000,function(){
+                    $('#smoke_t3').slideDown(3000,function(){
+                        $('#smoke_t4').slideDown(3000,function(){
+                            $('#smoke .text_box').fadeOut(3000);
+                            $('.smoke_bg').fadeIn(3000,function(){
+                                //打代码
+                                fn.printCode($('#smoke_code_html').html(),'.smoke_code',30,function(){
+                                    $('#smoke .next_btn').removeClass('hide');
+                                });
+                            });
+                            //关闭音乐
+                            hm.pause();
+                        });
+                    });
+                });
+            });
+        },
+        initRecruit:function(sel){
+            $(sel).find('.rec_light').fadeIn(2000,function(){
+                $(sel).find('.rec_man').fadeIn(1000,function(){
+                    $(sel).find('.rec_top_text').fadeIn(600,function(){
+                        $(sel).find('.rec_bottom_text').fadeIn(600,function(){
+                            $(sel).find('.next_btn').removeClass('hide');
+                        });
+                    });
+                });
+            });
+        },
+        initTeam:function(){
+            $('#team_t1').slideDown(1500,function(){
+                $('#team_t2').slideDown(1500,function(){
+                    $('#team_t3').slideDown(1500,function(){
+                        $('#team_t4').slideDown(1500,function(){
+                            $('#team_t5').slideDown(1500,function(){
+                                $('#team_t6').slideDown(1500,function(){
+                                    $('#team_t7').slideDown(1500,function(){
+                                        $('#team_t8').slideDown(1500,function(){
+                                            $('#team .next_btn').removeClass('hide');
+                                        });
+                                    });
+                                });
+                            });
+                        });
+                    });
+                });
+            });
+        },
+        printCode:function(code,sel,speed,call){
+            var codeBox=$(sel),
+                    pos=0,
+                    len=code.length;
+            codeBox.html('');
+            codeBox.removeClass('hide');
+            function typewriting(){
+                pos++;
+                if(pos<=len)
+                {
+                    switch(code.charAt(pos))
+                    {
+                        //处理 换行符、空格字符不显示
+                        case "-":
+                            pos=code.indexOf("；",pos);
+                            break;
+                        case "<":
+                            pos=code.indexOf(">",pos);
+                            break;
+                        case "&":
+                            pos=code.indexOf(";",pos);
+                            break;
+                    }
+                    codeBox.html(code.substring(0,pos));
+                    setTimeout(typewriting,speed);
+                }
+                else
+                {
+                    codeBox.addClass("gameover");
+                    $('#job .next_btn').removeClass('hide');
+                    call && call();
+                }
+            }
+            typewriting();
+        }
+    }
+</script>
+</body>
+</html>
