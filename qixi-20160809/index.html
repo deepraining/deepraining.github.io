@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico"/>
+
+    <link rel="stylesheet" type="text/css" href="./css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/jquery.material.form.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/weui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/jquery-weui.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/page.css"/>
+
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        !window.jQuery && document.write('<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js"><\/script>')
+    </script>
+    <script type="text/javascript" src="http://libs.baidu.com/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.fullPage.min.js"></script>
+    <script src="./js/jquery.fittext.js"></script>
+    <script src="./js/jquery.lettering.js"></script>
+    <script src="./js/jquery.textillate.js"></script>
+
+    <script>
+        var url = {};
+        url.base = 'http://120.25.164.190:10000';
+        url.sendMessage = url.base + '/qixi/send';
+        url.getMessage = url.base + '/qixi/get';
+    </script>
+
+    <title>七夕到了，让 TA 听见你的心声</title>
+</head>
+
+<body>
+
+<div id="container">
+    <div id="section-0" class="section section-0"></div>
+    <div id="section-1" class="section section-1">
+        <div class="inner">
+            <p class="inner-text">
+                <span id="inner-text-1-1">我躲在角落里</span>
+                <br>
+                <span id="inner-text-1-2">看着你一次次的经过</span>
+                <br>
+                <span id="inner-text-1-3">然后假装低着头</span>
+                <br>
+                <span id="inner-text-1-4">不敢直视到你的双眼</span>
+            </p>
+        </div>
+    </div>
+    <div id="section-2" class="section section-2">
+        <div class="inner">
+            <p class="inner-text">
+                <span id="inner-text-2-1">好想拨通你的号码</span>
+                <br>
+                <span id="inner-text-2-2">却又害怕接通后不知道说什么</span>
+                <br>
+                <span id="inner-text-2-3">我只能一次次拿起电话</span>
+                <br>
+                <span id="inner-text-2-4">然后又一次次放下</span>
+            </p>
+        </div>
+    </div>
+    <div id="section-3" class="section section-3">
+
+        <div class="inner">
+            <p class="inner-text">
+                <span id="inner-text-3-1">那天，你告诉我说</span>
+                <br>
+                <span id="inner-text-3-2">我们在一起吧</span>
+                <br>
+                <span id="inner-text-3-3">我简直不敢相信自己的耳朵</span>
+                <br>
+                <span id="inner-text-3-4">自己就是世界上最幸福的人</span>
+            </p>
+        </div>
+    </div>
+    <div id="section-4" class="section section-4">
+
+        <div class="inner">
+            <p class="inner-text">
+                <span id="inner-text-4-1">你问我</span>
+                <br>
+                <span id="inner-text-4-2">到底心里面有没有你</span>
+                <br>
+                <span id="inner-text-4-3">我想说，我一直很爱你</span>
+                <br>
+                <span id="inner-text-4-4">真的只是不善言辞</span>
+            </p>
+        </div>
+    </div>
+    <div id="section-5" class="section section-5">
+
+        <div class="inner">
+            <p class="inner-text">
+                <span id="inner-text-5-1">你走了</span>
+                <br>
+                <span id="inner-text-5-2">带着我全部的爱走了</span>
+                <br>
+                <span id="inner-text-5-3">我忍着眼泪看着你的背影</span>
+                <br>
+                <span id="inner-text-5-4">好想最后在抱你一次</span>
+            </p>
+        </div>
+    </div>
+    <div id="section-6" class="section section-6">
+
+        <div class="inner">
+            <p class="inner-text">
+                <span id="inner-text-6-1">我终归只是你的一个过客</span>
+                <br>
+                <span id="inner-text-6-2">你已经离开了很久</span>
+                <br>
+                <span id="inner-text-6-3">而我却未放下</span>
+                <br>
+                <span id="inner-text-6-4">似乎你昨天刚在我身边</span>
+            </p>
+        </div>
+    </div>
+    <div id="section-7" class="section section-7">
+        <div style="margin-top: -50px">
+            <p class="text-center white fs14 line-height-2">
+                七夕节到了，把你想说的话，写给 TA。<br>
+                TA 就在你的心里，能收听到。
+            </p>
+        </div>
+        <div class="inner mg50">
+
+            <form action="" class="material">
+                <input class="white" type="text" id="my-name" name="my-name" placeholder="我的名字" required>
+                <input class="white" type="text" id="its-name" name="its-name" placeholder="TA 的名字" required>
+                <textarea class="white" id="my-message" name="my-message" placeholder="我想对 TA 说："></textarea>
+            </form>
+            <a id="send-my-message" class="button color-dddddd">把话传达给 TA</a>
+            <a id="get-its-message" class="button color-dddddd">看看 TA 对我说了什么</a>
+        </div>
+    </div>
+    <div id="section-8" class="section section-8">
+
+        <div class="inner">
+            <p class="white text-center mgb50 fs24">
+                在这里，听见自己的心声
+            </p>
+            <div class="text-center" style="width: 150px; height: 150px; margin: auto;">
+                <img src="./images/qrcode.jpg">
+            </div>
+            <p class="white text-center mgt10">
+                听见
+            </p>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#container').fullpage({
+            anchors: ['page-0', 'page-1', 'page-2', 'page-3', 'page-4', 'page-5', 'page-6', 'page-7', 'page-8'],
+            scrollingSpeed: 500,
+            resize: false,
+            css3: true,
+            navigation: true,
+            onLeave: function (index, nextIndex, direction) {
+                if (direction == 'down') {
+                    for (var i = 0, il = 4; i < il; i++) {
+                        $('#inner-text-' + (nextIndex - 1) + '-' + (i + 1)).textillate({
+                            in: {
+                                effect: 'fadeIn',
+                                delay: 200
+                            }
+                        });
+                    }
+                }
+            }
+        });
+
+    });
+</script>
+<script src="./js/jquery.material.form.min.js"></script>
+<script>
+    $(function () {
+        $('form.material').materialForm(); // Apply material
+    });
+</script>
+<script src="./js/jquery-weui.js"></script>
+<script>
+    var itsMessage = '';
+    $(function () {
+        $('#send-my-message').click(function () {
+            var $itsName = $('#its-name'),
+                    $myName = $('#my-name'),
+                    $myMessage = $('#my-message'),
+                    itsName = $.trim($itsName.val()),
+                    myName = $.trim($myName.val()),
+                    myMessage = $.trim($myMessage.val());
+            if (!itsName) {
+                $.alert('TA 的名字不能为空哦，^_^');
+                return false;
+            }
+            if (!myName) {
+                $.alert('自己的名字不能为空哦，^_^');
+                return false;
+            }
+            if (!myMessage) {
+                $.alert('我想对TA说点什么呢，别为空哦');
+                return false;
+            }
+
+            $.getJSON(url.sendMessage, {
+                itsName: itsName,
+                myName: myName,
+                message: myMessage
+            }, function (res) {
+                if (res.success) {
+//                    $itsName.val('');
+//                    $myName.val('');
+//                    $myMessage.val('');
+                    $.alert('你的信息正在传达，请把这个页面分享给你的 TA，让 TA 听见你的心声', '让 TA 听见');
+                }
+            });
+        });
+
+        $('#get-its-message').click(function () {
+            var $itsName = $('#its-name'),
+                    $myName = $('#my-name'),
+                    itsName = $.trim($itsName.val()),
+                    myName = $.trim($myName.val());
+            if (!itsName) {
+                $.alert('TA 的名字不能为空哦，^_^');
+                return false;
+            }
+            if (!myName) {
+                $.alert('自己的名字不能为空哦，^_^');
+                return false;
+            }
+
+            $.getJSON(url.getMessage, {
+                itsName: itsName,
+                myName: myName
+            }, function (res) {
+                if (res.success) {
+                    $.alert(res.data, 'TA 想对你说');
+                } else {
+                    $.alert('>_<，TA 还没有为你留言，请把这个页面分享给你的 TA，告诉 TA，我想听见你的声音', 'TA 想对你说');
+                }
+            });
+        });
+
+    });
+</script>
+</body>
+</html>
