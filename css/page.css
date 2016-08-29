@@ -1,0 +1,48 @@
+.section {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-0 {
+    background-image: url(../images/bg-0.jpg);
+}
+.section-1 {
+    background-image: url(../images/bg-1.jpg);
+}
+.section-2 {
+    background-image: url(../images/bg-2.jpg);
+}
+.section-3 {
+    background-image: url(../images/bg-3.jpg);
+}
+.section-4 {
+    background-image: url(../images/bg-4.jpg);
+}
+.section-5 {
+    background-image: url(../images/bg-5.jpg);
+}
+.section-6 {
+    background-image: url(../images/bg-6.jpg);
+}
+
+.inner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 60%;
+}
+.inner-text {
+    font-size: 30px;
+    color: #BDD7F6;
+    line-height: 2em;
+    text-align: center;
+    vertical-align: middle;
+    /*writing-mode: vertical-lr;*/
+}
+
+/* 重写进度条的点 */
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: #4DC4FF;
+}
