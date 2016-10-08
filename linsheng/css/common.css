@@ -1,0 +1,233 @@
+/* common css */
+
+
+
+/* 重置 */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+code,
+del,
+dfn,
+em,
+img,
+q,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* 加载 Google 字体 */
+@font-face {
+  font-family: 'Philosopher';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Philosopher'), url(http://font.qiniudn.com/Philosopher.woff) format('woff');
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Titillium Web'), local('TitilliumWeb-Regular'), url(http://font.qiniudn.com/Titillium Web.woff) format('woff');
+}
+body {
+  font-size: 12px;
+  line-height: 1.5em;
+  font-family: "Titillium Web", "Helvetica Neue", Helvetica, "Microsoft Yahei", Arial, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Philosopher", "Helvetica Neue", Helvetica, "Microsoft Yahei", Arial, sans-serif;
+}
+input,
+textarea,
+select,
+.btn {
+  font-family: "Helvetica Neue", Helvetica, "Microsoft Yahei", Arial, sans-serif;
+}
+textarea {
+  resize: none;
+}
+button {
+  cursor: pointer;
+}
+:focus {
+  outline: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+
+/* 浮动 */
+.float-left,
+.fl {
+  float: left !important;
+}
+.float-right,
+.fr {
+  float: right !important;
+}
+
+/* 清除浮动 */
+.clearfix,
+.cf {
+  *zoom: 1;
+}
+.clearfix:before,
+.cf:before,
+.clearfix:after,
+.cf:after {
+  display: table;
+  content: " ";
+  line-height: 0;
+}
+.clearfix:after,
+.cf:after {
+  clear: both;
+}
+
+/* 隐藏文字 */
+.hidden-text,
+.ht {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+/* 字体alignment */
+.text-center{
+  text-align: center;
+}
+
+/* 形状 */
+.triangle {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  *zoom: 1;
+}
+.circle {
+  border-radius: 50%;
+}
+.mgt10 {
+  margin-top: 10px!important;
+}
+.mgl50 {
+	margin-left: 50px !important;
+}
+
+.mgr50 {
+	margin-right: 50px !important;
+}
+.mg50 {
+  margin: 50px!important;
+}
+.mgb50 {
+  margin-bottom: 50px!important;
+}
+.white {
+  color: white;
+}
+.fs13 {
+  font-size: 13px;
+}
+.fs14 {
+  font-size: 14px;
+}
+.fs16 {
+  font-size: 16px!important;
+}
+.fs18 {
+  font-size: 18px!important;
+}
+.fs20 {
+  font-size: 20px!important;
+}
+.fs24 {
+  font-size: 24px!important;
+}
+.line-height-2 {
+  line-height: 2em;
+}
+.hide {
+  display: none;
+}
+/*img {*/
+  /*width: 100%;*/
+/*}*/
+.blur {
+  -webkit-filter: blur(18px);
+  -moz-filter: blur(18px);
+  -ms-filter: blur(18px);
+  filter: blur(18px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=18, MakeShadow=false);
+}
+.color-dddddd {
+  color: #dddddd!important;
+}
+.color-4DC4FF {
+  color: #4DC4FF!important;
+}
