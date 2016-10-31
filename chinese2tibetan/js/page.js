@@ -18,6 +18,6 @@ $(function () {
                 nameTibetanArray.push(chinese2tibetan[namePinyinArray[i]]);
         }
         //console.log(nameTibetanArray);
-        $nameTibetan.val(nameTibetanArray.join('·') + '།');
+        $nameTibetan.val(nameTibetanArray.join('་') + '།');
     });
 });
