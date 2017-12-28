@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>bootstrap-datepicker-lunar-plugin example</title>
+    <title>bootstrap-datetimepicker-lunar-plugin example</title>
 
     <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="./css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="./css/bootstrap-datetimepicker.css">
 </head>
 <body>
 <div style="position: relative; top: 100px; width: 200px; margin: 0 auto;">
@@ -14,12 +14,12 @@
 </body>
 <script src="../js/jquery.js"></script>
 <script src="../js/LunarCalendar.js"></script>
-<script src="./js/bootstrap-datepicker.js"></script>
-<script src="./js/bootstrap-datepicker.zh-CN.min.js"></script>
-<script src="./js/bootstrap-datepicker-lunar-plugin.js"></script>
+<script src="./js/bootstrap-datetimepicker.js"></script>
+<script src="./js/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="./js/bootstrap-datetimepicker-lunar-plugin.js"></script>
 <script>
-$('#input').datepicker({
-    format: 'yyyy-mm-dd',
+$('#input').datetimepicker({
+    format: 'yyyy-mm-dd hh:ii:ss',
     language: 'zh-CN',
     autoclose: true,
     forceParse: !1
