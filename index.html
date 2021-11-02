@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="renderer" content="webkit" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta
+    name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,user-scalable=no,maximum-scale=1"
+  />
+  <title>深予之 @senntyou - 个人网站</title>
+  <meta name="keywords" content="深予之,senntyou,个人网站" />
+  <meta name="description" content="深予之 @senntyou - 个人网站" />
+
+  <link type="text/css" href="./css/normalize.css" rel="stylesheet">
+  <link type="text/css" href="./index.css" rel="stylesheet">
+</head>
+<body>
+<div id="impress" data-autoplay="7">
+  <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+    <h2 class="text-1">深予之 @senntyou</h2>
+    <span class="text-2">达则兼济天下，穷则独善其身。</span>
+  </div>
+
+  <div
+    id="its"
+    class="step"
+    data-x="850"
+    data-y="3000"
+    data-rotate="90"
+    data-scale="5"
+  >
+    <p>
+      一水一浪一轻纹，<br />
+      一江一潮一孤柳。<br />
+      一山一碧一空城，<br />
+      一叶一蝶一秋痕。<br />
+      一池一畔一芙蓉，<br />
+      一亭一梦一芳菲。
+    </p>
+  </div>
+
+  <div
+    id="big"
+    class="step"
+    data-x="3500"
+    data-y="2100"
+    data-rotate="180"
+    data-scale="6"
+  >
+    <p>
+      天行健，<br />君子以自强不息；<br />
+      地势坤，<br />君子以厚德载物。
+    </p>
+  </div>
+
+  <div
+    id="tiny"
+    class="step"
+    data-x="2825"
+    data-y="2325"
+    data-z="-3000"
+    data-rotate="300"
+    data-scale="1"
+  >
+    <p>优雅的吟诗者，极客的程序猿</p>
+  </div>
+
+  <div
+    id="ing"
+    class="step"
+    data-x="3500"
+    data-y="-850"
+    data-z="0"
+    data-rotate="270"
+    data-scale="6"
+  >
+    <p>我的技术栈：</p>
+    <p>
+      <b class="positioning">JavaScript</b>
+      <b class="rotating">NodeJs</b>
+      <b class="scaling">Electron</b>
+      <b class="positioning">Linux</b>
+      <b class="rotating">Nginx</b>
+      <b class="scaling">Java</b>
+      <b class="positioning">Gradle</b>
+      <b class="rotating">Spring</b>
+      <b class="scaling">MySQL</b>
+      <b class="positioning">Python</b>
+      <b class="rotating">TensorFlow</b>
+    </p>
+  </div>
+
+  <div
+    id="imagination"
+    class="step"
+    data-x="7500"
+    data-y="-300"
+    data-scale="6"
+  >
+    <p><b class="imagination">关于我</b></p>
+  </div>
+
+  <div
+    id="source"
+    class="step"
+    data-x="7000"
+    data-y="2000"
+    data-rotate="20"
+    data-scale="4"
+  >
+    <p>
+      Github:
+      <a href="https://github.com/senntyou" target="_blank"
+      >https://github.com/senntyou</a
+      ><br />
+      SegmentFault:
+      <a href="https://segmentfault.com/u/senntyou" target="_blank"
+      >https://segmentfault.com/u/senntyou</a
+      ><br />
+      Blogs:
+      <a href="https://github.com/senntyou/blogs" target="_blank"
+      >https://github.com/senntyou/blogs</a
+      ><br />
+      MySite:
+      <a href="http://www.senntyou.com/" target="_blank"
+      >http://www.senntyou.com/</a
+      >
+    </p>
+  </div>
+
+  <div
+    id="one-more-thing"
+    class="step"
+    data-x="6000"
+    data-y="4000"
+    data-scale="2"
+  >
+    <p>我的爱好</p>
+  </div>
+
+  <div
+    id="its-in-3d"
+    class="step"
+    data-x="6200"
+    data-y="4300"
+    data-z="-100"
+    data-rotate-x="-40"
+    data-rotate-y="10"
+    data-scale="2"
+  >
+    <p>
+      看书、运动、专研技术
+    </p>
+  </div>
+
+  <div
+    id="overview"
+    class="step"
+    data-x="3000"
+    data-y="1500"
+    data-z="0"
+    data-scale="10"
+  ></div>
+</div>
+<div id="impress-toolbar"></div>
+
+<div class="hint">
+  <p>使用空格键或者上下左右键开始浏览</p>
+</div>
+<script>
+  if ('ontouchstart' in document.documentElement) {
+    document.querySelector('.hint').innerHTML =
+      '<p>向左、右滑动开始浏览</p>';
+  }
+</script>
+<script src="./js/impress.js"></script>
+<script>
+  window.impress().init();
+</script>
+</body>
+</html>
