@@ -2,9 +2,9 @@
  * 
  *     bootstrap-datepicker-lunar-plugin v0.0.1
  * 
- *     https://github.com/senntyou/bootstrap-datepicker-lunar-plugin
+ *     https://github.com/deepraining/bootstrap-datepicker-lunar-plugin
  * 
- *     @senntyou <jiangjinbelief@163.com>
+ *     @deepraining <jiangjinbelief@163.com>
  * 
  *     2017-12-27 17:28:15
  *     
